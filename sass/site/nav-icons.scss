@@ -22,6 +22,7 @@
   top: 0px;
   right: 0;
   transform: translate(-$content-gutter, 50%);
+  opacity: .25;
   &:before {
     content: '';
     position: absolute;

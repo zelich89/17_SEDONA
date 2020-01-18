@@ -50,7 +50,6 @@
     }
     text-align: center;
     padding: 17px 0;
-    transition: opacity .2s ease;
     &:not(:last-child):after {
       content: '';
       position: absolute;
@@ -63,8 +62,12 @@
         display: none;
       }
     }
+    transition: all .2s ease;
     &:hover {
-      opacity: .6;
+      color: $primary;
+    }
+    &:visited {
+      opacity: .3;
     }
   }
   &__item-logo {
@@ -88,9 +91,18 @@
       display: none;
     }
   }
-  &__logo-desktop {
+  &__logo-tablet {
     display: none;
     @media (min-width: $tablet) {
+      display: block;
+    }
+    @media (min-width: $desktop) {
+      display: none;
+    }
+  }
+  &__logo-desktop {
+    display: none;
+    @media (min-width: $desktop) {
       display: block;
     }
   }

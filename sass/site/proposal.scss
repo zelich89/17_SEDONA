@@ -1,0 +1,106 @@
+.proposal {
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  @media (min-width: $mobile) {
+    flex-direction: row;
+    padding: 0;
+  }
+  &__content {
+    height: 125px;
+    display: flex;
+    @media (min-width: $mobile) {
+      width: 33%;
+      height: 333px;
+      flex-direction: column;
+      align-items: center;
+      padding: 60px 0 0 0;
+    }
+  }
+
+  &-one {
+    order: 0;
+    @media (min-width: $mobile) {
+      width: 34%;
+    }
+    &-image {
+      display: inline-block;
+      color: $primary;
+      .svg {
+        @include square-size(40px);
+        @media (min-width: $mobile) {
+          @include square-size(70px);
+        }
+      }
+    }
+    &-content {
+      text-transform: uppercase;
+      margin: 10px 20px 20px 20px;
+      @include font(normal, 14px, 21px);
+      @media (min-width: $mobile) {
+        text-align: center;
+        width: 65%;
+      }
+      &__title{
+        @include font(bold, 18px, 26px);
+        margin-bottom: 25px;
+      }
+    }
+  }
+  &-two {
+    order: 1;
+    @media (min-width: $mobile) {
+      order: 2;
+    }
+    &-image {
+      display: inline-block;
+      color: $primary;
+      .svg {
+        @include square-size(40px);
+        @media (min-width: $mobile) {
+          @include square-size(70px);
+        }
+      }
+    }
+    &-content {
+      text-transform: uppercase;
+      margin: 10px 20px;
+      @include font(normal, 14px, 21px);
+      @media (min-width: $mobile) {
+        text-align: center;
+      }
+      &__title{
+        @include font(bold, 18px, 26px);
+        margin-bottom: 25px;
+      }
+    }
+  }
+  &-three {
+    order: 2;
+    @media (min-width: $mobile) {
+      order: 1;
+    }
+    &-image {
+      display: inline-block;
+      color: $primary;
+      .svg {
+        @include square-size(40px);
+        @media (min-width: $mobile) {
+          @include square-size(70px);
+        }
+      }
+    }
+    &-content {
+      text-transform: uppercase;
+      margin: 10px 20px;
+      @include font(normal, 14px, 21px);
+      @media (min-width: $mobile) {
+        text-align: center;
+      }
+      &__title{
+        @include font(bold, 18px, 26px);
+        margin-bottom: 25px;
+      }
+    }
+  }
+}

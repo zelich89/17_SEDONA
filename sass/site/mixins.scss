@@ -1,3 +1,8 @@
 @mixin font ($font-weight, $font-size, $line-height) {
   font: $font-weight #{$font-size}/#{$line-height} 'PT Sans', sans-serif;
 }
+
+@mixin square-size ($ss) {
+  width: $ss;
+  height: $ss;
+}
