@@ -1,5 +1,4 @@
 .question {
-  text-transform: uppercase;
   margin: 0 auto;
   text-align: center;
   width: 90%;
@@ -16,12 +15,10 @@
     padding-bottom: 40px;
   }
   &__button {
-    text-transform: uppercase;
     padding: 20px 50px;
     background-color: $primary;
     color: $white;
     transition: all .2s ease;
-    @include font(bold, 21px, 26px);
     cursor: pointer;
     outline: none;
     &:hover {
