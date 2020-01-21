@@ -2,12 +2,21 @@
   height: 390px;
   background: url(/img/back-mobile.jpg) no-repeat top center/cover;
   position: relative;
+  resize: both;
+  overflow: auto;
   @media (min-width: $mobile) {
     height: 518px;
   }
+  &__triangle {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 57px;
+    background: url(/img/intro-triangle.png) no-repeat center center;
+  }
   &__first {
     width: 90%;
-    object-fit: cover;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -19,11 +28,5 @@
     @media (min-width: $desktop) {
       width: 40%;
     }
-  }
-  &__triangle {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
   }
 }

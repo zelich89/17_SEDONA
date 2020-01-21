@@ -10,7 +10,6 @@
   }
   &__title {
     padding: 30px 0;
-    @include font(bold, 21px, 26px);
   }
   &__description {
     @include font(normal, 14px, 24px);

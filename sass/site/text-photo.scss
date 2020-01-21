@@ -1,10 +1,22 @@
-.text-photo-two {
+.text-photo {
   position: relative;
+  resize: both;
+  overflow: auto;
   @media (min-width: $mobile) {
     display: flex;
   }
+  &__triangle {
+    position: absolute;
+    top: -1px;
+    left: 0;
+    right: 0;
+    height: 37px;
+    background: url(/img/triangle2.png) no-repeat top center;
+    @media (min-width: $mobile) {
+      display: none;
+    }
+  }
   .description-text {
-    order: 2;
     @media (min-width: $mobile)  {
       width: 33%;
     }
@@ -34,9 +46,13 @@
         width: auto;
       }*/
     }
+    &--order-tab-2 {
+      @media (min-width: $mobile) {
+        order: 2;
+      }
+    }
   }
   .description-photo {
-    order: 1;
     @media (min-width: $mobile) {
       width: 67%;
       height: 100%;
@@ -47,7 +63,11 @@
       pointer-events: none;
       vertical-align: top;
     }
-
+    &--order--tab-1 {
+      @media (min-width: $mobile) {
+        order: 1;
+      }
+    }
   }
 }
 

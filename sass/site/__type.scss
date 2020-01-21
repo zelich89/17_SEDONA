@@ -1,0 +1,14 @@
+h2 {
+  @include font(bold, 21px, 26px);
+  @media (min-width: $mobile) {
+    @include font(bold, 30px, 37px);
+  }
+}
+
+h3 {
+  @include font(bold, 18px, 26px);
+  @media (min-width: $mobile) {
+    @include font(bold, 21px, 26px);
+  }
+}
+

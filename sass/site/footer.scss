@@ -21,32 +21,6 @@
    align-items: center;
    justify-content: center;
  }
-  &-icons {
-    display: flex;
-    margin-bottom: 40px;
-    @media (min-width: $mobile) {
-      margin-bottom: 0;
-    }
-    .icon {
-      @include square-size(48px);
-      background-color: $primary;
-      color: $white;
-      margin-right: 6px;
-      svg {
-        @include square-size(20px);
-      }
-      transition: all .2s ease;
-      cursor: pointer;
-      outline: none;
-      &:hover {
-        background-color: $primary-hover;
-      }
-      &:visited {
-        background-color: $primary-hover;
-        color: rgba($white, .2);
-      }
-    }
-  }
   &__made-by {
     display: flex;
     align-items: center;

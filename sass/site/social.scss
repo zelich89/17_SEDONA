@@ -1,0 +1,31 @@
+.social {
+
+  &-icons {
+    display: flex;
+    margin-bottom: 40px;
+    @media (min-width: $mobile) {
+      margin-bottom: 0;
+    }
+    .icon {
+      @include square-size(48px);
+      background-color: $primary;
+      color: $white;
+      svg {
+        @include square-size(20px);
+      }
+      transition: all .2s ease;
+      cursor: pointer;
+      outline: none;
+      &:not(:last-child) {
+        margin-right: 6px;
+      }
+      &:hover {
+        background-color: $primary-hover;
+      }
+      &:visited {
+        background-color: $primary-hover;
+        color: rgba($white, .2);
+      }
+    }
+  }
+}
