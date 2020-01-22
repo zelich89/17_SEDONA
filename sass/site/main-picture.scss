@@ -16,17 +16,23 @@
     background: url(/img/intro-triangle.png) no-repeat center center;
   }
   &__first {
-    width: 90%;
+    width: 282px;
+    height: 214px;
+    @media (min-width: $mobile) {
+      width: 460px;
+      height: 350px;
+    }
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
     pointer-events: none;
+/*    width: 90%;
     @media (min-width: $mobile) {
       width: 65%;
     }
     @media (min-width: $desktop) {
       width: 40%;
-    }
+    }*/
   }
 }

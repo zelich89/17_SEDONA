@@ -20,10 +20,6 @@
       padding-bottom: 15px;
     }
     &__content {
-      //width: 80%;
-      /*@media (min-width: $mobile) {
-        width: auto;
-      }*/
     }
     &--order-tab-2 {
       @media (min-width: $mobile) {
@@ -43,10 +39,10 @@
   &-photo {
     @media (min-width: $mobile) {
       width: 67%;
-      height: 100%;
     }
     &-content {
       width: 100%;
+      height: 100%;
       object-fit: cover;
       pointer-events: none;
       vertical-align: top;
