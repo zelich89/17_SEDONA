@@ -6,10 +6,27 @@
     flex-direction: row;
   }
   &__content {
+    //&:not(:last-child) {
+    //  border-bottom: 1px solid $tertiary;
+    //  @media (min-width: $mobile) {
+    //    border-bottom: none;
+    //  }
+    //}
+    &:not(:last-child):after {
+      content: '';
+      position: absolute;
+      right: 20px;
+      left: 20px;
+      border-bottom: 1px solid $tertiary;
+      @media (min-width: $mobile) {
+        border-bottom: none;
+      }
+      }
+    }
   }
-  .description-text {
+  /*.description-text {
     @media (min-width: $mobile)  {
-      width: 34%;
+      width: 33.333%;
     }
     background-color: $quaternary;
     color: $secondary;
@@ -43,5 +60,4 @@
         border: none;
       }
     }
-  }
-}
+  }*/

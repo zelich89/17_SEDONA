@@ -16,59 +16,6 @@
       display: none;
     }
   }
-  .description-text {
-    @media (min-width: $mobile)  {
-      width: 33%;
-    }
-    background-color: $primary;
-    color: $white;
-    text-transform: uppercase;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 50px 0;
-    @include font(normal, 14px, 21px);
-    &__main {
-      @include font(bold, 18px, 26px);
-      @media (min-width: $mobile) {
-        @include font(bold, 21px, 26px);
-      }
-      padding-bottom: 15px;
-    }
-    &__numb{
-      padding-bottom: 15px;
-    }
-    &__content {
-      width: 80%;
-      /*@media (min-width: $mobile) {
-        width: auto;
-      }*/
-    }
-    &--order-tab-2 {
-      @media (min-width: $mobile) {
-        order: 2;
-      }
-    }
-  }
-  .description-photo {
-    @media (min-width: $mobile) {
-      width: 67%;
-      height: 100%;
-    }
-    &-content {
-      width: 100%;
-      object-fit: cover;
-      pointer-events: none;
-      vertical-align: top;
-    }
-    &--order--tab-1 {
-      @media (min-width: $mobile) {
-        order: 1;
-      }
-    }
-  }
 }
 
 
