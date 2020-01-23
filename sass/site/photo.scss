@@ -1,0 +1,66 @@
+.photo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 40px auto 0 auto;
+  width: 90%;
+  //border: 2px solid;
+  @media (min-width: $tablet) {
+    margin: 75px auto 0 auto;
+    width: 85%;
+  }
+  @media (min-width: $desktop) {
+    margin: 110px auto 0 auto;
+    width: 100%;
+  }
+  &-head {
+    text-align: center;
+    @media (min-width: $tablet) {
+      padding: 0 100px;
+    }
+    position: relative;
+    padding-bottom: 35px !important;
+    &:after {
+      content: '';
+      right: 0;
+      bottom: 0;
+      left: 0;
+      border-bottom: 1px solid $tertiary;
+    }
+    &__title {
+      padding-bottom: 40px;
+    }
+    &__text {
+      text-transform: uppercase;
+    }
+  }
+  &-div {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &-picture {
+    position: relative;
+    height: 280px;
+    @media (min-width: $mobile) {
+      height: 267px;
+    }
+    &__img {
+      width: 100%;
+      height: 100%;
+      @media (min-width: $mobile) {
+        width: 50%;
+      }
+      object-fit: cover;
+      vertical-align: top;
+    }
+    &--big {
+     @media (min-width: $mobile) {
+        height: 400px;
+       .photo-picture__img {
+         width: 100%;
+       }
+      }
+    }
+  }
+}

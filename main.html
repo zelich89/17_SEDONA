@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic-ext" rel="stylesheet">
 
     <link href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA////CP///wr///8BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD////g//////////////////////////////8rAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD///+n/////////////////////////////////////////yYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP//////////////oP///1n////9////////////////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD///9+AAAAAAAAAAAAAAAAAAAAAP///////////////wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP///8////////////////8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD///+M////////////////////////////////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/////////////////////////////////////////CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD///8F/////////////////////////+L///8fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA////D////////////////////wQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD///////////////////8NAAAAAP///zP////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/////////////////////////////////////wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD///////////////////////////////////97AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP///xv///+U////d////yAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//8AAP//AADwPwAA4B8AAPEPAAD/jwAA/w8AAPgPAADwHwAA8H8AAPH/AADx3wAA8B8AAPgfAAD+/wAA//8AAA==" rel="icon" type="image/x-icon" />
-    <title>SEDONNA-Photo</title>
+    <title>SEDONNA</title>
     <svg style="display: none;">
         <symbol viewBox="0 0 24 24" id="icon-house">
             <g>
@@ -63,11 +63,6 @@
                 <path d="M22 9.74l-2 1.02v7.24c-1.007 2.041-5.606 3-8.5 3-3.175 0-7.389-.994-8.5-3v-7.796l-3-1.896 12-5.308 11 6.231v8.769l1 3h-3l1-3v-8.26zm-18 1.095v6.873c.958 1.28 4.217 2.292 7.5 2.292 2.894 0 6.589-.959 7.5-2.269v-6.462l-7.923 4.039-7.077-4.473zm-1.881-2.371l9.011 5.694 9.759-4.974-8.944-5.066-9.826 4.346z" fill="currentColor" stroke="none"/>
             </g>
         </symbol>
-        <symbol viewBox="0 0 24 24" id="icon-like">
-            <g>
-                <path d="M5 22h-5v-12h5v12zm17.615-8.412c-.857-.115-.578-.734.031-.922.521-.16 1.354-.5 1.354-1.51 0-.672-.5-1.562-2.271-1.49-1.228.05-3.666-.198-4.979-.885.906-3.656.688-8.781-1.688-8.781-1.594 0-1.896 1.807-2.375 3.469-1.221 4.242-3.312 6.017-5.687 6.885v10.878c4.382.701 6.345 2.768 10.505 2.768 3.198 0 4.852-1.735 4.852-2.666 0-.335-.272-.573-.96-.626-.811-.062-.734-.812.031-.953 1.268-.234 1.826-.914 1.826-1.543 0-.529-.396-1.022-1.098-1.181-.837-.189-.664-.757.031-.812 1.133-.09 1.688-.764 1.688-1.41 0-.565-.424-1.109-1.26-1.221z" fill="currentColor" stroke="none"/>
-            </g>
-        </symbol>
     </svg>
 </head>
 
@@ -111,84 +106,101 @@
             <div class="main-picture__triangle"> </div>
         </div>
 
-        <!--<div class="title-text">
+        <div class="title-text">
             <h3 class="title-text__main">СЕДОНА — небольшой городок в АРИЗОНЕ,
                 <br>
-                зАСЛУЖИвающий большего!!
+                зАСЛУЖИвающий большего!
             </h3>
             <div class="title-text__marginal">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</div>
-        </div>-->
+        </div>
 
-        <div class="photo">
-            <div class="photo-head">
-                <h3 class="photo-head__title">Фото и видео</h3>
-                <div class="photo-head__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</div>
+        <div class="text-photo">
+            <div class="text-photo__triangle"></div>
+            <div class="text-photo__text-content description-text description-text--bg-primary description-text--color-white">
+                <h3 class="description-text__main">НАСТОЯЩИЙ ГОРОДОК</h3>
+                <div class="description-text__numb">- №1 -</div>
+                <div class="description-text__content">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</div>
             </div>
+            <div class="text-photo_photo description-photo">
+                <img class="description-photo-content" src="img/photo-city@1x.png" alt="">
+            </div>
+        </div>
 
-            <div class="photo-div">
-                <div class="photo-picture photo-picture--big">
-                    <img class="photo-picture__img" src="img/photo-1-desktop.jpg" alt="">
-                    <div class="photo-picture__description picture-description picture-description--big">
-                        <div class="picture-description__content">
-                            <h4>неродные просторы</h4>
-                           Автор фото: Бориs
-                        </div>
-                        <div class="picture-description__like-block">
-                            <div class="picture-description__like">
-                                <svg class="svg">
-                                    <use xlink:href="#icon-like"></use>
-                                </svg>
-                            </div>
-                            <div class="picture-description__quantity">
-                                1350
-                            </div>
-                        </div>
-                    </div>
+        <div class="proposal">
+            <div class="proposal__content proposal-one">
+                <div class="proposal-one-image">
+                    <svg class="svg">
+                        <use xlink:href="#icon-house"></use>
+                    </svg>
                 </div>
-
-
-                <div class="photo-picture">
-                    <img class="photo-picture__img" src="img/photo-2-desktop.jpg" alt="">
-                    <div class="photo-picture__description picture-description picture-description--big">
-                        <div class="picture-description__content">
-                            <h4>Местная растительность</h4>
-                            Автор фото: Сергей
-                        </div>
-                        <div class="picture-description__like-block">
-                            <div class="picture-description__like">
-                                <svg class="svg">
-                                    <use xlink:href="#icon-like"></use>
-                                </svg>
-                            </div>
-                            <div class="picture-description__quantity">
-                                143
-                            </div>
-                        </div>
-                    </div>
+                <div class="proposal-one-content">
+                    <h3 class="proposal-one-content__title">ЖИЛЬе</h3>
+                    Рекомендуем пожить в настоящем мотеле, все как в кино!
                 </div>
-                <div class="photo-picture">
-                    <img class="photo-picture__img" src="img/photo-3-desktop.jpg" alt="">
-                    <div class="photo-picture__description picture-description picture-description--big">
-                        <div class="picture-description__content">
-                            <h4>Дорога на север</h4>
-                            Автор фото: Петр
-                        </div>
-                        <div class="picture-description__like-block">
-                            <div class="picture-description__like">
-                                <svg class="svg">
-                                    <use xlink:href="#icon-like"></use>
-                                </svg>
-                            </div>
-                            <div class="picture-description__quantity">
-                                96
-                            </div>
-                        </div>
-                    </div>
+            </div>
+            <div class="proposal__content proposal-one">
+                <div class="proposal-one-image">
+                    <svg class="svg">
+                        <use xlink:href="#icon-eat"></use>
+                    </svg>
+                </div>
+                <div class="proposal-one-content">
+                    <h3 class="proposal-one-content__title">ЕДа</h3>
+                    Всегда заказывайте ФИРМЕННЫЙ БУРГЕР,
+                    Вы НЕ разочаруетесь!
+                </div>
+            </div>
+            <div class="proposal__content proposal-one">
+                <div class="proposal-one-image">
+                    <svg class="svg">
+                        <use xlink:href="#icon-gift2"></use>
+                    </svg>
+                </div>
+                <div class="proposal-one-content">
+                    <h3 class="proposal-one-content__title">СУВЕНИРЫ</h3>
+                    Не только китайского, но и местного производства!
                 </div>
             </div>
         </div>
 
-        <div class="h-400"></div>
+        <div class="text-photo">
+            <div class="text-photo__text-content description-text description-text--bg-primary description-text--order-tab-2 description-text--color-white">
+                <h3 class="description-text__main">ТАМ ЕСТЬ Мост дьявола</h3>
+                <div class="description-text__numb">- №2 -</div>
+                <div class="description-text__content">Да, по нему можно пройти! Если вы осмелитесь, конечно</div>
+            </div>
+            <div class="text-photo_photo description-photo description-photo--order-tab-1">
+                <img class="description-photo-content" src="img/photo-bridge@1x.png" alt="">
+            </div>
+        </div>
+
+        <div class="proposition">
+            <div class="proposition__content description-text description-text--bg-quaternary">
+                <h3 class="description-text__main">НЕБОЛЬШАЯ ПЛОЩАДЬ</h3>
+                <div class="description-text__numb">- №3 -</div>
+                <div class="description-text__content">ВСЕ интересные места находятся очень близко"</div>
+            </div>
+            <div class="proposition__content description-text description-text--bg-quaternary">
+                <h3 class="description-text__main">КРАСИВАЯ ДОРОГА</h3>
+                <div class="description-text__numb">- №4 -</div>
+                <div class="description-text__content">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!о</div>
+            </div>
+            <div class="proposition__content description-text description-text--bg-quaternary">
+                <h3 class="description-text__main">МАЛО ТУРИСТОВ</h3>
+                <div class="description-text__numb">- №5 -</div>
+                <div class="description-text__content">Большинство едет в гранд каньон и толпится там</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h2 class="question__title">ЗАИНТЕРЕСОВАЛИСЬ?</h2>
+            <div class="question__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</div>
+            <h3  class="question__button" >НАЙТИ гостиницу</h3>
+        </div>
+
+        <div class="g-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2254951.547645671!2d-113.32433470919696!3d34.21219441025075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b08ebcb4c186b%3A0x423927b17fc1cd71!2z0JDRgNC40LfQvtC90LAsINCh0KjQkA!5e0!3m2!1sru!2sua!4v1579275434386!5m2!1sru!2sua" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        </div>
 
         <div class="footer">
             <h3 class="footer__text">#visitSEDONA</h3>

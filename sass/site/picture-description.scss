@@ -1,0 +1,47 @@
+.picture-description {
+  padding: 15px 0;
+  @media (min-width: $mobile) {
+    padding: 20px;
+    background-color: $quaternary;
+  }
+  @media (min-width: $tablet) {
+    padding: 0;
+  }
+  @media (min-width: $mobile) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  @media (min-width: $tablet) {
+    position: absolute;
+    content: '';
+    top: 320px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .3);
+    color: $white;
+    padding: 0 20px;
+    .picture-description__like {
+      color: $white;
+    }
+  }
+  &__content {
+    padding-bottom: 10px;
+    @media (min-width: $mobile) {
+      padding-bottom: 0;
+    }
+  }
+  &__like {
+    margin-right: 15px;
+    color: rgba($secondary, .3);
+    .svg {
+      @include square-size(23px);
+    }
+  }
+  &__like-block {
+    display: flex;
+    font-weight: bold;
+    align-items: center;
+  }
+}
