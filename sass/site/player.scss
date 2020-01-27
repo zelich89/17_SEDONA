@@ -1,0 +1,135 @@
+.player { ////////////////////////////////////////////////////////////////////////
+  &__played {
+    position: absolute;
+    right: 20px;
+    bottom: 0;
+    left: 20px;
+    height: 45px;
+    background-color: rgba(0,0,0,.6);
+    @media (min-width: $mobile) {
+      left: 0;
+      right: 0;
+      height: 93px;
+    }
+  }
+  &__mobile {
+    position: absolute;
+    top: 100%;
+    right: 20px;
+    left: 20px;
+    height: 66px;
+    background-color: $body-bg;
+    @media(min-width: $mobile) {
+      display: none;
+    }
+  }
+  &-mobile {
+
+    &__replay {
+      position: absolute;
+      top: 50%;
+      left: 10%;
+      transform: translateY(-50%);
+      color: $media;
+      .svg {
+        @include square-size(20px);
+        @media (min-width: $mobile) {
+          display: none;
+        }
+      }
+    }
+    &__subtitles {
+      position: absolute;
+      top: 50%;
+      right: 25%;
+      transform: translateY(-50%);
+      color: $media;
+      .svg {
+        width: 30px;
+        height: 20px;
+        @media (min-width: $mobile) {
+          display: none;
+        }
+      }
+    }
+    &__fullscreen {
+      position: absolute;
+      top: 50%;
+      right: 10%;
+      transform: translateY(-50%);
+      color: $media;
+      .svg {
+        @include square-size(20px);
+        @media (min-width: $mobile) {
+          display: none;
+        }
+      }
+    }
+  }
+  &__line {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    left: 20px;
+    height: 4px;
+    transform: translateY(-50%);
+    @media (min-width: $mobile) {
+      left: 15%;
+      right: 25%;
+    }
+    background-color: rgba(255,255,255,.2);
+    z-index: 10;
+    color: $white;
+    .svg {
+      cursor: pointer;
+      position: absolute;
+      top: 0;
+      left: 20%;
+      @include square-size(10px);
+      transform: translateY(-3px);
+    }
+  }
+  &__replay {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+    color: $white;
+    .svg {
+      display: none;
+      @media (min-width: $mobile) {
+        display: inline;
+        @include square-size(20px);
+      }
+    }
+  }
+  &__subtitles {
+    position: absolute;
+    top: 50%;
+    right: 15%;
+    transform: translateY(-50%);
+    color: $white;
+    .svg {
+      display: none;
+      @media (min-width: $mobile) {
+        display: inline;
+        width: 30px;
+        height: 20px;
+      }
+    }
+  }
+  &__fullscreen {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+    color: $white;
+    .svg {
+      display: none;
+      @media (min-width: $mobile) {
+        display: inline;
+        @include square-size(20px);
+      }
+    }
+  }
+}

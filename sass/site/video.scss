@@ -1,0 +1,39 @@
+.video {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &-head {
+    text-align: center;
+    @media (min-width: $tablet) {
+      padding: 0 100px;
+    }
+    position: relative;
+    &__title {
+      padding-bottom: 40px;
+    }
+    &__text {
+      padding-bottom: 40px;
+      @media (min-width: $mobile) {
+        padding-bottom: 80px;
+      }
+    }
+  }
+  &-div {
+    display: flex;
+    justify-content: center;
+    position: relative;
+      width: 100%;
+      @media (min-width: $mobile) {
+        width: 80%;
+      }
+      @media (min-width: $desktop) {
+        width: 60%;
+     }
+
+    &__img {
+      pointer-events: none;
+      width: 100%;
+    }
+  }
+}

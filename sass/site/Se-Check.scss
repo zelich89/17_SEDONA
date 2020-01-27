@@ -1,0 +1,33 @@
+.Se-Check {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+  &-div {
+    //border: 1px solid #000;
+    margin-bottom: 20px;
+  }
+  .checked {
+    @include square-size(56px);
+    border-radius: 5px;
+    background: $body-bg;
+    margin: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background $transition-time ease;
+    &:hover {
+      background: $btn-hover-color;
+    }
+    svg {
+      @include square-size(40px);
+      transform: scale(0);
+      transition: transform $transition-time ease;
+    }
+  }
+  .checkbox:checked ~ .checked {
+    svg {
+      transform: scale(1);
+    }
+  }
+}

@@ -1,0 +1,114 @@
+.review {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  //border: 2px solid;
+  &-head {
+    text-align: center;
+    &__title {
+      padding-bottom: 40px;
+    }
+    margin-top: 40px;
+    margin-bottom: 20px;
+    width: 90%;
+    @media (min-width: $tablet) {
+      margin: 75px 0;
+      width: 85%;
+    }
+    @media (min-width: $desktop) {
+      margin-top: 110px;
+      margin-bottom: 65px;
+      width: 42%;
+    }
+  }
+  &-ident {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__title {
+      padding-bottom: 25px;
+    }
+  }
+  &-nik {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    &__input {
+      font-weight: bold;
+      width: 100%;
+      margin-left: 15px;
+      padding: 20px;
+      background-color: $body-bg;
+      &::placeholder {
+        color: $secondary;
+        @include input-placeholder;
+      }
+    }
+  }
+  &-info {
+    width: 100%;
+    margin: 30px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__title {
+      padding-left: 20px;
+      padding-bottom: 25px;
+    }
+    &__name {
+      padding-left: 20px;
+      padding-bottom: 10px;
+      text-transform: uppercase;
+    }
+    &__content {
+      width: 100%;
+      padding: 20px;
+      background-color: $body-bg;
+
+      &::placeholder {
+        @include font(bold, 18px, 24px);
+        color: $secondary;
+        @include input-placeholder;
+      }
+    }
+    &__input {
+      margin-bottom: 20px;
+      position: relative;
+      width: 90%;
+      @media (min-width: $mobile) {
+        width: 85%;
+      }
+    }
+    &__icon {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      width: 55px;
+      background-color: #e6e6e6;
+      color: $secondary;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .svg {
+        @include square-size(18px);
+      }
+    }
+  }
+  &-choose {
+    width: 90%;
+    &__title {
+      padding-bottom: 20px;
+    }
+  }
+  &-select {
+    width: 90%;
+    &__title {
+      padding-bottom: 20px;
+    }
+  }
+}

@@ -3,15 +3,15 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 40px auto 0 auto;
+  margin: 40px auto;
   width: 90%;
   //border: 2px solid;
   @media (min-width: $tablet) {
-    margin: 75px auto 0 auto;
+    margin: 75px auto;
     width: 85%;
   }
   @media (min-width: $desktop) {
-    margin: 110px auto 0 auto;
+    margin: 110px auto;
     width: 100%;
   }
   &-head {
@@ -41,25 +41,48 @@
   }
   &-picture {
     position: relative;
-    height: 280px;
+    padding: 20px 0;
     @media (min-width: $mobile) {
-      height: 267px;
+      padding: 0;
     }
     &__img {
       width: 100%;
-      height: 100%;
+      height: 280px;
       @media (min-width: $mobile) {
-        width: 50%;
+        height: 267px;
       }
       object-fit: cover;
       vertical-align: top;
+      pointer-events: none;
+    }
+    &:not(:nth-child(1)) {
+      @media (min-width: $mobile) {
+        width: 50%;
+      }
+      @media (min-width: $desktop) {
+        width: 33.333%;
+      }
     }
     &--big {
      @media (min-width: $mobile) {
-        height: 400px;
        .photo-picture__img {
          width: 100%;
+         height: 400px;
        }
+      }
+    }
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      //background-color: rgba(green, .3);
+      border-top: 1px solid $tertiary;
+      border-bottom: 1px solid $tertiary;
+      @media (min-width: $mobile) {
+        border: none;
       }
     }
   }

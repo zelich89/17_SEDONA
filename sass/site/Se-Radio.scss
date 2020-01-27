@@ -1,0 +1,44 @@
+.Se-Radio {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+  &-div {
+    &:not(:last-child) {
+      //background: chartreuse;
+      margin-bottom: 20px;
+    }
+  }
+  .radioed {
+    @include square-size(56px);
+    background: $body-bg;
+    border-radius: 50%;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background $transition-time ease;
+    &:hover {
+      background: $btn-hover-color;
+    }
+    &:after {
+      content: "";
+      background: $secondary;
+      width: 42%;
+      height: 42%;
+      border-radius: 50%;
+      transform: scale(0);
+      transition: transform $transition-time ease;
+    }
+    &-text {
+      font-weight: bold;
+    }
+  }
+  .radio:checked ~ .radioed {
+    &:hover {
+    }
+    &:after {
+      transform: scale(1);
+    }
+  }
+}

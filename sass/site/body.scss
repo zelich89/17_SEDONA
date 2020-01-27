@@ -8,6 +8,16 @@ body {
   font-family: 'PT Sans', sans-serif;
   background-color: $body-bg;
   min-width: 250px;
+  a {
+    text-decoration: none;
+    color: $secondary;
+  }
+  input {
+    box-shadow: none;
+    resize: none;
+    outline: none;
+    border: none;
+  }
 }
 
 .h-400 {

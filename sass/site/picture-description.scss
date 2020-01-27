@@ -1,5 +1,5 @@
 .picture-description {
-  padding: 15px 0;
+  padding-top: 15px;
   @media (min-width: $mobile) {
     padding: 20px;
     background-color: $quaternary;
@@ -11,17 +11,17 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 20px;
   }
-  @media (min-width: $tablet) {
+  @media (min-width: $desktop) {
     position: absolute;
     content: '';
-    top: 320px;
     right: 0;
     bottom: 0;
     left: 0;
     background-color: rgba(0, 0, 0, .3);
     color: $white;
-    padding: 0 20px;
+    padding: 15px;
     .picture-description__like {
       color: $white;
     }
