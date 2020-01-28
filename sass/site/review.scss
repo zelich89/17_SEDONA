@@ -104,11 +104,21 @@
     &__title {
       padding-bottom: 20px;
     }
+    &__field {
+      &--indents10 {
+        margin: 10px;
+      }
+    }
   }
   &-select {
     width: 90%;
     &__title {
       padding-bottom: 20px;
+    }
+    &__field {
+      &--indents10 {
+        margin: 10px;
+      }
     }
   }
 }

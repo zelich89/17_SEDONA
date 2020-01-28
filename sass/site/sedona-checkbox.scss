@@ -1,0 +1,36 @@
+.sedona-checkbox {
+  display: flex;
+  align-items: center;
+  user-select: none;
+  &__checked {
+    @include square-size(56px);
+    border-radius: 5px;
+    background: $body-bg;
+    //margin: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background $transition-time ease;
+    &:hover {
+      background: $btn-hover-color;
+    }
+    .svg {
+      @include square-size(40px);
+      transform: scale(0);
+      transition: transform $transition-time ease;
+    }
+  }
+  &__input:checked ~ .sedona-checkbox__checked {
+    .svg {
+      transform: scale(1);
+    }
+  }
+  &__text {
+    font-weight: bold;
+    &--ml10 {
+      margin-left: 10px;
+    }
+  }
+
+}

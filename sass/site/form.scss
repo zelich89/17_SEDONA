@@ -1,0 +1,269 @@
+.form {
+  &__wrap {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    order: 2;
+    @media (min-width: 1700px) {
+      //width: 50%;
+    }
+  }
+
+  &-head {
+    height: auto;
+    text-align: center;
+    &__title {
+      padding-bottom: 40px;
+    }
+    &__text {
+      text-transform: uppercase;
+    }
+    padding: 40px 25px 20px 25px;
+    @media (min-width: $tablet) {
+      padding: 75px 110px;
+      order: 0;
+    }
+    @media (min-width: $desktop) {
+      padding: 110px 380px 65px 380px;
+    }
+  }
+
+  &-ident {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__title {
+      padding-bottom: 25px;
+    }
+    &--half {
+      @media (min-width: $tablet) {
+        width: 50%;
+      }
+    }
+  }
+
+  &-nik {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    &__input {
+      font-weight: bold;
+      width: 100%;
+      margin-left: 15px;
+      padding: 20px;
+      background-color: $body-bg;
+      &::placeholder {
+        color: $secondary;
+        @include input-placeholder;
+      }
+    }
+  }
+
+  &-info {
+    height: auto;
+    width: 100%;
+    padding: 20px;
+    @media (min-width: $tablet) {
+      padding: 0 60px;
+    }
+    @media (min-width: $desktop) {
+      padding: 0 120px;
+    }
+    &__title {
+      padding-bottom: 20px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    &__name {
+      padding-left: 20px;
+      padding-bottom: 10px;
+      text-transform: uppercase;
+    }
+    &__content {
+      width: 100%;
+      padding: 20px;
+      background-color: $body-bg;
+
+      &::placeholder {
+        @include font(bold, 18px, 24px);
+        color: $secondary;
+        @include input-placeholder;
+      }
+    }
+    &__input {
+      margin-bottom: 20px;
+      position: relative;
+    }
+    &__icon {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      width: 55px;
+      background-color: #e6e6e6;
+      color: $secondary;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .svg {
+        @include square-size(18px);
+      }
+    }
+  }
+
+  &-choose {
+    height: auto;
+    padding: 20px;
+    @media (min-width: $tablet) {
+      padding: 0 60px;
+      width: 50%;
+      order: 1;
+    }
+    @media (min-width: $desktop) {
+      padding: 0 120px;
+    }
+    &__title {
+      padding-bottom: 20px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    &__field {
+      &--indents10 {
+        margin: 10px 0;
+      }
+    }
+  }
+
+&__cover {
+  &-desktop {
+    @media (min-width: $desktop) {
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+  &-tablet {
+    @media (min-width: $tablet) {
+      display: flex;
+      justify-content: space-around;
+    }
+    @media (min-width: $desktop) {
+      width: 50%;
+      justify-content: space-between;
+    }
+  }
+}
+
+  &-select {
+    height: auto;
+    padding: 20px;
+    @media (min-width: $tablet) {
+      padding: 0 60px;
+    }
+    @media (min-width: $desktop) {
+      padding: 0 120px;
+    }
+    &__title {
+      padding-bottom: 20px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    &__field {
+      @media (min-width: $desktop) {
+        width: 50%;
+      }
+      &--indents10 {
+        margin: 10px 0;
+      }
+    }
+  }
+
+  &-emotion {
+    height: auto;
+    padding: 20px;
+    @media (min-width: $tablet) {
+      padding: 0 60px;
+    }
+    @media (min-width: $desktop) {
+      padding: 0 120px;
+    }
+    &__title {
+      padding-bottom: 20px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    &__field {
+      &--indents10 {
+        margin: 10px;
+      }
+    }
+    &__textarea {
+      /***************************/      margin-bottom: 25px;
+      height: 160px;
+      width: 100%;
+      padding: 20px;
+      background-color: $body-bg;
+      border: none;
+      &::placeholder {
+        @include font(bold, 18px, 24px);
+        color: $secondary;
+        @include input-placeholder;
+      }
+    }
+  }
+
+  &-unnamed {
+    height: auto;
+    padding: 20px;
+    @media (min-width: $tablet) {
+      padding: 0 60px;
+    }
+    @media (min-width: $desktop) {
+      padding: 0 120px;
+    }
+    &__button {
+      padding: 15px 0;
+      width: 100%;
+      @media (min-width: $mobile) {
+        padding: 20px 0;
+        width: 50%;
+      }
+      text-align: center;
+      background-color: $primary;
+      color: $white;
+      transition: all .2s ease;
+      cursor: pointer;
+      outline: none;
+      &:hover {
+        background-color: $primary-hover;
+      }
+      &:visited {
+        background-color: $primary-hover;
+        color: rgba($white, .2);
+      }
+      &:disabled {
+        background-color: $primary-disable;
+        cursor: auto;
+      }
+    }
+    &__wrap {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &__mark {
+      display: none;
+      text-transform: uppercase;
+      @media (min-width: $mobile) {
+        display: block;
+      }
+    }
+  }
+
+}
