@@ -9,33 +9,40 @@
     display: flex;
     flex-direction: column;
     order: 2;
-    @media (min-width: 1700px) {
-      //width: 50%;
-    }
+    //border: 1px solid;
   }
 
   &-head {
     height: auto;
     text-align: center;
+    //background-color: rgba(222,9,9,.1);
     &__title {
       padding-bottom: 40px;
     }
     &__text {
       text-transform: uppercase;
     }
-    padding: 40px 25px 20px 25px;
+    padding: 45px 25px 20px 25px;
     @media (min-width: $tablet) {
-      padding: 75px 110px;
+      padding: 75px 110px 35px 110px;
       order: 0;
     }
     @media (min-width: $desktop) {
-      padding: 110px 380px 65px 380px;
+      padding: 110px 380px 35px 380px;
     }
   }
 
   &-ident {
     height: auto;
     display: flex;
+    //background-color: rgba(9,222,9,.1);
+    padding: 20px;
+    @media (min-width: $tablet) {
+      padding: 30px 60px;
+    }
+    @media (min-width: $desktop) {
+      padding: 30px 120px;
+    }
     flex-direction: column;
     align-items: center;
     &__title {
@@ -46,13 +53,20 @@
         width: 50%;
       }
     }
+    &--border {
+      border-top: 1px solid $quinary;
+      @media (min-width: $mobile) {
+        border-top: none;
+        border-left: 1px solid $quinary;
+      }
+    }
   }
 
   &-nik {
     display: flex;
     align-items: center;
     text-transform: uppercase;
-    margin-bottom: 20px;
+    //margin-bottom: 20px;
     &__input {
       font-weight: bold;
       width: 100%;
@@ -64,17 +78,47 @@
         @include input-placeholder;
       }
     }
+    &--indents10 {
+      margin: 10px 0;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
   }
 
   &-info {
+    position: relative;
     height: auto;
     width: 100%;
+    //background-color: rgba(	255, 140, 0,.1);
     padding: 20px;
     @media (min-width: $tablet) {
-      padding: 0 60px;
+      padding: 30px 60px;
     }
     @media (min-width: $desktop) {
-      padding: 0 120px;
+      padding: 30px 120px;
+    }
+    &__obertka {
+      @media (min-width: $desktop) {
+        display: flex;
+        align-items: center;
+      }
+    }
+    &__block {
+      @media (min-width: $desktop) {
+        display: flex;
+        align-items: center;
+        width: 50%;
+      }
+      &--indents20 {
+        margin-bottom: 20px;
+        @media (min-width: $desktop) {
+          margin-bottom: 0;
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
     }
     &__title {
       padding-bottom: 20px;
@@ -83,14 +127,28 @@
     }
     &__name {
       padding-left: 20px;
-      padding-bottom: 10px;
+      white-space: nowrap;
       text-transform: uppercase;
+      @media (min-width: $desktop) {
+        padding-left: 0;
+      }
+      &--indents10 {
+        padding-bottom: 15px;
+        @media (min-width: $desktop) {
+          padding-bottom: 0;
+          padding-right: 15px;
+        }
+      }
+      &--otstup {
+        @media (min-width: $desktop) {
+          margin-left: 80px;
+        }
+      }
     }
     &__content {
       width: 100%;
       padding: 20px;
       background-color: $body-bg;
-
       &::placeholder {
         @include font(bold, 18px, 24px);
         color: $secondary;
@@ -98,8 +156,12 @@
       }
     }
     &__input {
-      margin-bottom: 20px;
+      //margin-left: 15px;
+      //margin-bottom: 20px;
       position: relative;
+      @media (min-width: $desktop) {
+        width: 100%;
+      }
     }
     &__icon {
       position: absolute;
@@ -116,18 +178,29 @@
         @include square-size(18px);
       }
     }
+    &--border {
+      border-top: 1px solid $quinary;
+      @media (min-width: $mobile) {
+        border-top: none;
+      }
+    }
   }
 
   &-choose {
     height: auto;
+    //background-color: rgba(0,0,205,.1);
     padding: 20px;
     @media (min-width: $tablet) {
-      padding: 0 60px;
-      width: 50%;
+      padding: 30px 50px;
       order: 1;
     }
     @media (min-width: $desktop) {
-      padding: 0 120px;
+      padding: 30px 120px;
+    }
+    &--half {
+      @media (min-width: $tablet) {
+        width: 50%;
+      }
     }
     &__title {
       padding-bottom: 20px;
@@ -137,6 +210,15 @@
     &__field {
       &--indents10 {
         margin: 10px 0;
+        &:last-child {
+         margin-bottom: 0;
+        }
+      }
+    }
+    &--border {
+      border-top: 1px solid $quinary;
+      @media (min-width: $mobile) {
+        border-top: none;
       }
     }
   }
@@ -162,12 +244,13 @@
 
   &-select {
     height: auto;
+    //background-color: rgba(220, 20, 60,.1);
     padding: 20px;
     @media (min-width: $tablet) {
-      padding: 0 60px;
+      padding: 30px 60px;
     }
     @media (min-width: $desktop) {
-      padding: 0 120px;
+      padding: 30px 120px;
     }
     &__title {
       padding-bottom: 20px;
@@ -175,23 +258,34 @@
       text-align: center;
     }
     &__field {
+      width: 200px;
       @media (min-width: $desktop) {
         width: 50%;
       }
       &--indents10 {
         margin: 10px 0;
+        @media (min-width: $desktop) {
+          margin: 0;
+        }
+      }
+    }
+    &--border {
+      border-top: 1px solid $quinary;
+      @media (min-width: $mobile) {
+        border-top: none;
       }
     }
   }
 
   &-emotion {
     height: auto;
+    //background-color: rgba(	50, 205, 50,.1);
     padding: 20px;
     @media (min-width: $tablet) {
-      padding: 0 60px;
+      padding: 30px 60px;
     }
     @media (min-width: $desktop) {
-      padding: 0 120px;
+      padding: 30px 120px;
     }
     &__title {
       padding-bottom: 20px;
@@ -204,28 +298,34 @@
       }
     }
     &__textarea {
-      /***************************/      margin-bottom: 25px;
       height: 160px;
       width: 100%;
       padding: 20px;
       background-color: $body-bg;
-      border: none;
+      //border: none;
       &::placeholder {
         @include font(bold, 18px, 24px);
         color: $secondary;
         @include input-placeholder;
       }
     }
+    &--border {
+      border-top: 1px solid $quinary;
+      @media (min-width: $mobile) {
+        border-top: none;
+      }
+    }
   }
 
   &-unnamed {
     height: auto;
+    //background-color: rgba(	64, 224, 208,.1);
     padding: 20px;
     @media (min-width: $tablet) {
-      padding: 0 60px;
+      padding: 30px 60px;
     }
     @media (min-width: $desktop) {
-      padding: 0 120px;
+      padding: 30px 120px;
     }
     &__button {
       padding: 15px 0;

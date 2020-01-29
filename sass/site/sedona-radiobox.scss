@@ -22,6 +22,7 @@
       height: 42%;
       border-radius: 50%;
       transform: scale(0);
+      //transition: transform 5s ease;
       transition: transform $transition-time ease;
     }
   }

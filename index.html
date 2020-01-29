@@ -155,79 +155,85 @@
                      </div>
                 </div>
 
-                <div class="form__item form-ident form-ident--half">
-                    <h4 class="form-ident__title">
+                <div class="form__item form-ident form-ident--half form-ident--border">
+                    <h3 class="form-ident__title">
                         Представьтесь:
-                    </h4>
-                        <div class="form-nik">
+                    </h3>
+                        <div class="form-nik form-nik--indents10">
                             Имя*:
                             <input type="text" class="form-nik__input"  placeholder="Пётр">
                         </div>
-                        <div class="form-nik">
+                        <div class="form-nik form-nik--indents10">
                             Фамилия*:
                             <input type="text" class="form-nik__input"  placeholder="Иванов">
                         </div>
-                        <div class="form-nik">
+                        <div class="form-nik form-nik--indents10">
                             Отчество:
                             <input type="text" class="form-nik__input"  placeholder="Александрович">
                         </div>
                 </div>
 
-                <div class="form__item form-info">
-                    <h4 class="form-info__title">
+                <div class="form__item form-info form-info--border">
+                    <h3 class="form-info__title">
                         Контактная информация:
-                    </h4>
-                    <div class="form-info__name">
-                        Контактный телефон*:
-                    </div>
-                    <div class="form-info__input">
-                        <input class="form-info__content" type="text" placeholder="Введите телефон">
-                        <div class="form-info__icon">
-                            <svg class="svg">
-                                <use xlink:href="#icon-phone "></use>
-                            </svg>
+                    </h3>
+                    <div class="form-info__obertka">
+                        <div class="form-info__block form-info__block--indents20">
+                            <div class="form-info__name form-info__name--indents10">
+                                Контактный телефон*:
+                            </div>
+                            <div class="form-info__input">
+                                <input class="form-info__content" type="text" placeholder="Введите телефон">
+                                <div class="form-info__icon">
+                                    <svg class="svg">
+                                        <use xlink:href="#icon-phone "></use>
+                                    </svg>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="form-info__name">
-                        Электронная почта*:
-                    </div>
-                    <div class="form-info__input">
-                        <input class="form-info__content" type="text" placeholder="Введите e-mail">
-                        <div class="form-info__icon">
-                            <svg class="svg">
-                                <use xlink:href="#icon-mail"></use>
-                            </svg>
+                        <div class="form-info__block form-info__block--indents20">
+                            <div class="form-info__name form-info__name--indents10 form-info__name--otstup">
+                                Электронная почта*:
+                            </div>
+                            <div class="form-info__input">
+                                <input class="form-info__content" type="text" placeholder="Введите e-mail">
+                                <div class="form-info__icon">
+                                    <svg class="svg">
+                                        <use xlink:href="#icon-mail"></use>
+                                    </svg>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="form__item form-choose">
-                    <h4 class="form-choose__title">
-                        ВАше Общее впечатление:
-                    </h4>
+                <div class="form__item form-choose form-choose--border form-choose--half" >
+                    <h3 class="form-choose__title">
+                        ВАше Общее впечатлениЕ:
+                    </h3>
                     <div class="form-choose__field sedona-radiobox form-choose__field--indents10">
-                        <input class="sedona-radiobox__input" hidden checked type="radio" name="radio">
+                        <input class="sedona-radiobox__input" hidden checked type="radio" name="choose" id="choose-1">
                         <div class="sedona-radiobox__radioed"></div>
-                        <div class="sedona-radiobox__text sedona-radiobox__text--ml10">Скорее положительное</div>
+                        <label for="choose-1" class="sedona-radiobox__text sedona-radiobox__text--ml10">Скорее положительное2</label>
                     </div>
                     <div class="form-choose__field sedona-radiobox form-choose__field--indents10">
-                        <input class="sedona-radiobox__input" hidden type="radio" name="radio">
+                        <input class="sedona-radiobox__input" hidden type="radio" name="choose">
                         <div class="sedona-radiobox__radioed"></div>
-                        <div class="sedona-radiobox__text sedona-radiobox__text--ml10">Скорее отрицательное</div>
+                        <label class="sedona-radiobox__text sedona-radiobox__text--ml10">Скорее отрицательное</label>
                     </div>
                     <div class="form-choose__field sedona-radiobox form-choose__field--indents10">
-                        <input class="sedona-radiobox__input" hidden type="radio" name="radio">
+                        <input class="sedona-radiobox__input" hidden type="radio" name="choose">
                         <div class="sedona-radiobox__radioed"></div>
-                        <div class="sedona-radiobox__text sedona-radiobox__text--ml10">Затрудняюсь ответить</div>
+                        <label class="sedona-radiobox__text sedona-radiobox__text--ml10">Затрудняюсь ответить</label>
                     </div>
                 </div>
 
-                <div class="form__item form-select">
-                    <h4 class="form-select__title">
+                <div class="form__item form-select form-select--border">
+                    <h3 class="form-select__title">
                         посещенные
                         <br>
                         достопримечательности:
-                    </h4>
+                    </h3>
 
                     <div class="form__cover-desktop">
                         <div class="form__cover-tablet">
@@ -277,10 +283,10 @@
 
                 </div>
 
-                <div class="form__item form-emotion">
-                    <h4 class="form-emotion__title">
-                        Опишите свои эмоции:
-                    </h4>
+                <div class="form__item form-emotion form-emotion--border">
+                    <h3 class="form-emotion__title">
+                        Опишите 3вои эмоции:
+                    </h3>
                     <textarea class="form-emotion__textarea" placeholder="Опишите все ваши пожелания к заказу"></textarea>
                 </div>
 
@@ -419,7 +425,7 @@
 
         </div>-->
 
-        <div class="h-400"></div>
+<!--        <div class="h-400"></div>-->
 
         <div class="footer">
             <h3 class="footer__text">#visitSEDONA</h3>
