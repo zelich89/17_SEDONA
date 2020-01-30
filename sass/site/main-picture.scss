@@ -35,4 +35,24 @@
       width: 40%;
     }*/
   }
+  &__second {
+    width: 229px;
+    height: 39px;
+    @media (min-width: $mobile) {
+      width: 458px;
+      height: 78px;
+    }
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    pointer-events: none;
+  }
+  &--form {
+    background-position-y: bottom;
+    height: 158px;
+    @media (min-width: $mobile) {
+      height: 290px;
+    }
+  }
 }

@@ -36,3 +36,48 @@ body {
   border-radius: 50%;
   background-color: #000;
 }
+
+.image-pos-mobile {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  //transform: translate(-50%, 11%);
+  //display: none;
+  opacity: .3;
+  z-index: 100;
+  pointer-events: none;
+  top: 13px;
+  @media (min-width: $mobile) {
+    display: none;
+  }
+}
+.image-pos-tablet {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  //transform: translate(-50%, 11%);
+  display: none;
+  opacity: .3;
+  z-index: 100;
+  pointer-events: none;
+  @media (min-width: $mobile) {
+    display: block;
+  }
+  @media (min-width: $desktop) {
+    display: none;
+  }
+}
+.image-pos-desktop {
+  position: absolute;
+  left: 50%;
+  //transform: translateX(-50%);
+  transform: translate(-50%, -0.4%);
+  display: none;
+  opacity: .3;
+  z-index: 100;
+  pointer-events: none;
+  @media (min-width: $desktop) {
+    display: block;
+  }
+}
+

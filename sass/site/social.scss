@@ -2,7 +2,6 @@
 
   &-icons {
     display: flex;
-    margin-bottom: 40px;
     @media (min-width: $mobile) {
       margin-bottom: 0;
     }
@@ -25,6 +24,12 @@
       &:visited {
         background-color: $primary-hover;
         color: rgba($white, .2);
+      }
+    }
+    &--indent {
+      margin-bottom: 30px;
+      @media (min-width: $mobile) {
+        margin-bottom: 0;
       }
     }
   }

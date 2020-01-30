@@ -7,7 +7,7 @@ function style() {
     return gulp.src('./sass/*.scss')
         .pipe(sass())
         .pipe(prefix('last 2 versions'))
-        .pipe(sass({outputStyle: 'compressed'}))
+        // .pipe(sass({outputStyle: 'compressed'}))
         .pipe(gulp.dest('./css'))
         .pipe(sass().on('error', sass.logError))
         .pipe(browserSync.stream());

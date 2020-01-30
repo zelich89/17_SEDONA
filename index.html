@@ -100,6 +100,9 @@
 </head>
 
 <body>
+    <img class="image-pos-mobile" src="img/1-mobile.jpg" alt="">
+    <img class="image-pos-tablet" src="img/1-tablet.jpg" alt="">
+    <img class="image-pos-desktop" src="img/1-desktop.jpg" alt="">
     <div class="content">
         <div class="breakpoint"></div>
 
@@ -133,24 +136,18 @@
             </div>
         </div>
 
-        <div class="main-picture">
-            <img class="main-picture__first" src="img/text-index.png" alt="">
+        <div class="main-picture main-picture--form">
+<!--            <img class="main-picture__first" src="img/text-index.png" alt="">-->
+            <img class="main-picture__second" src="img/SEDONA.png" alt="">
 
             <div class="main-picture__triangle"> </div>
         </div>
 
-        <!--<div class="title-text">
-            <h3 class="title-text__main">СЕДОНА — небольшой городок в АРИЗОНЕ,
-                <br>
-                зАСЛУЖИвающий большего!!
-            </h3>
-            <div class="title-text__marginal">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</div>
-        </div>-->
 
         <div class="form">
             <div class="form__wrap">
                 <div class="form__item form-head">
-                    <h3 class="form-head__title">Оставьте свой отзыв</h3>
+                    <h2 class="form-head__title">Оставьте свой отзыв</h2>
                     <div class="form-head__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях
                      </div>
                 </div>
@@ -161,25 +158,25 @@
                     </h3>
                         <div class="form-nik form-nik--indents10">
                             Имя*:
-                            <input type="text" class="form-nik__input"  placeholder="Пётр">
+                            <input type="text" class="form-nik__input h5"  placeholder="Пётр">
                         </div>
                         <div class="form-nik form-nik--indents10">
                             Фамилия*:
-                            <input type="text" class="form-nik__input"  placeholder="Иванов">
+                            <input type="text" class="form-nik__input h5"  placeholder="Иванов">
                         </div>
                         <div class="form-nik form-nik--indents10">
                             Отчество:
-                            <input type="text" class="form-nik__input"  placeholder="Александрович">
+                            <input type="text" class="form-nik__input h5"  placeholder="Александрович">
                         </div>
                 </div>
 
                 <div class="form__item form-info form-info--border">
-                    <h3 class="form-info__title">
+                    <h3 class="form-info__title form-info__title--indents">
                         Контактная информация:
                     </h3>
                     <div class="form-info__obertka">
-                        <div class="form-info__block form-info__block--indents20">
-                            <div class="form-info__name form-info__name--indents10">
+                        <div class="form-info__block form-info__block--indents15">
+                            <div class="form-info__name form-info__name--indents15">
                                 Контактный телефон*:
                             </div>
                             <div class="form-info__input">
@@ -191,8 +188,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="form-info__block form-info__block--indents20">
-                            <div class="form-info__name form-info__name--indents10 form-info__name--otstup">
+                        <div class="form-info__block form-info__block--indents15">
+                            <div class="form-info__name form-info__name--indents15 form-info__name--otstup">
                                 Электронная почта*:
                             </div>
                             <div class="form-info__input">
@@ -208,28 +205,28 @@
                 </div>
 
                 <div class="form__item form-choose form-choose--border form-choose--half" >
-                    <h3 class="form-choose__title">
+                    <h3 class="form-choose__title form-choose__title--indents">
                         ВАше Общее впечатлениЕ:
                     </h3>
-                    <div class="form-choose__field sedona-radiobox form-choose__field--indents10">
+                    <label class="form-choose__field sedona-radiobox form-choose__field--indents10">
                         <input class="sedona-radiobox__input" hidden checked type="radio" name="choose" id="choose-1">
                         <div class="sedona-radiobox__radioed"></div>
-                        <label for="choose-1" class="sedona-radiobox__text sedona-radiobox__text--ml10">Скорее положительное2</label>
-                    </div>
-                    <div class="form-choose__field sedona-radiobox form-choose__field--indents10">
+                        <h5 class="sedona-radiobox__text sedona-radiobox__text--ml25">Скорее положительное</h5>
+                    </label>
+                    <label class="form-choose__field sedona-radiobox form-choose__field--indents10">
                         <input class="sedona-radiobox__input" hidden type="radio" name="choose">
                         <div class="sedona-radiobox__radioed"></div>
-                        <label class="sedona-radiobox__text sedona-radiobox__text--ml10">Скорее отрицательное</label>
-                    </div>
-                    <div class="form-choose__field sedona-radiobox form-choose__field--indents10">
+                        <h5 class="sedona-radiobox__text sedona-radiobox__text--ml25">Скорее отрицательное</h5>
+                    </label>
+                    <label class="form-choose__field sedona-radiobox form-choose__field--indents10">
                         <input class="sedona-radiobox__input" hidden type="radio" name="choose">
                         <div class="sedona-radiobox__radioed"></div>
-                        <label class="sedona-radiobox__text sedona-radiobox__text--ml10">Затрудняюсь ответить</label>
-                    </div>
+                        <h5 class="sedona-radiobox__text sedona-radiobox__text--ml25">Затрудняюсь ответить</h5>
+                    </label>
                 </div>
 
                 <div class="form__item form-select form-select--border">
-                    <h3 class="form-select__title">
+                    <h3 class="form-select__title form-select__title--indents25">
                         посещенные
                         <br>
                         достопримечательности:
@@ -244,7 +241,7 @@
                                         <use xlink:href="#icon-checked"></use>
                                     </svg>
                                 </div>
-                                <div class="sedona-checkbox__text sedona-checkbox__text--ml10">Мост Дьявола</div>
+                                <div class="sedona-checkbox__text sedona-checkbox__text--ml25 h5">Мост Дьявола</div>
                             </label>
 
                             <label class="form-select__field sedona-checkbox form-select__field--indents10">
@@ -254,7 +251,7 @@
                                         <use xlink:href="#icon-checked"></use>
                                     </svg>
                                 </div>
-                                <div class="sedona-checkbox__text sedona-checkbox__text--ml10">Гора-Колокол</div>
+                                <div class="sedona-checkbox__text sedona-checkbox__text--ml25 h5">Гора-Колокол</div>
                             </label>
                         </div>
 
@@ -266,17 +263,17 @@
                                         <use xlink:href="#icon-checked"></use>
                                     </svg>
                                 </div>
-                                <div class="sedona-checkbox__text sedona-checkbox__text--ml10">Слайд-парк</div>
+                                <div class="sedona-checkbox__text sedona-checkbox__text--ml25 h5">Слайд-парк</div>
                             </label>
 
-                            <label class="form-select__field sedona-checkbox form-select__field--indents10">
+                            <label class="form-select__field sedona-checkbox form-select__field--indents10 form-select__field--temp-mb-0">
                                 <input class="sedona-checkbox__input" hidden type="checkbox">
                                 <div class="sedona-checkbox__checked">
                                     <svg class="svg">
                                         <use xlink:href="#icon-checked"></use>
                                     </svg>
                                 </div>
-                                <div class="sedona-checkbox__text sedona-checkbox__text--ml10">Красные скалы</div>
+                                <div class="sedona-checkbox__text sedona-checkbox__text--ml25 h5">Красные скалы</div>
                             </label>
                         </div>
                     </div>
@@ -284,10 +281,10 @@
                 </div>
 
                 <div class="form__item form-emotion form-emotion--border">
-                    <h3 class="form-emotion__title">
+                    <h3 class="form-emotion__title form-emotion__title--indent">
                         Опишите 3вои эмоции:
                     </h3>
-                    <textarea class="form-emotion__textarea" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+                    <textarea class="form-emotion__textarea h5" placeholder="Опишите подробно все свои восторги "></textarea>
                 </div>
 
                 <div class="form__item form-unnamed">
@@ -298,138 +295,10 @@
                 </div>
             </div>
         </div>
-        <!--<div class="review">
-            <div class="review-head">
-                <h3 class="review-head__title">Оставьте свой отзыв</h3>
-                <div class="review-head__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях
-                </div>
-            </div>
-
-
-            <div class="review-ident">
-                <h4 class="review-ident__title">
-                    Представьтесь:
-                </h4>
-                <div class="div">
-                    <div class="review-nik">
-                        Имя*:
-                        <input type="text" class="review-nik__input"  placeholder="Пётр">
-                    </div>
-                    <div class="review-nik">
-                        Фамилия*:
-                        <input type="text" class="review-nik__input"  placeholder="Иванов">
-                    </div>
-                    <div class="review-nik">
-                        Отчество:
-                        <input type="text" class="review-nik__input"  placeholder="Александрович">
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="review-info">
-                <h4 class="review-info__title">
-                    Контактная информация:
-                </h4>
-                <div class="review-info__name">
-                    Контактный телефон*:
-                </div>
-                <div class="review-info__input">
-                    <input class="review-info__content" type="text" placeholder="Введите телефон">
-                    <div class="review-info__icon">
-                        <svg class="svg">
-                            <use xlink:href="#icon-phone "></use>
-                        </svg>
-                    </div>
-                </div>
-
-                <div class="review-info__name">
-                    Электронная почта*:
-                </div>
-                <div class="review-info__input">
-                    <input class="review-info__content" type="text" placeholder="Введите e-mail">
-                    <div class="review-info__icon">
-                        <svg class="svg">
-                            <use xlink:href="#icon-mail"></use>
-                        </svg>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="review-choose">
-                <h4 class="review-choose__title">
-                    ВАше Общее впечатление:
-                </h4>
-                <div class="review-choose__field sedona-radiobox review-choose__field&#45;&#45;indents10">
-                    <input class="sedona-radiobox__input" hidden checked type="radio" name="radio">
-                    <div class="sedona-radiobox__radioed"></div>
-                    <div class="sedona-radiobox__text sedona-radiobox__text&#45;&#45;ml10">Good положительное</div>
-                </div>
-                <div class="review-choose__field sedona-radiobox review-choose__field&#45;&#45;indents10">
-                    <input class="sedona-radiobox__input" hidden type="radio" name="radio">
-                    <div class="sedona-radiobox__radioed"></div>
-                    <div class="sedona-radiobox__text sedona-radiobox__text&#45;&#45;ml10">Скорее отрицательное</div>
-                </div>
-                <div class="review-choose__field sedona-radiobox review-choose__field&#45;&#45;indents10">
-                    <input class="sedona-radiobox__input" hidden type="radio" name="radio">
-                    <div class="sedona-radiobox__radioed"></div>
-                    <div class="sedona-radiobox__text sedona-radiobox__text&#45;&#45;ml10">Затрудняюсь ответить</div>
-                </div>
-            </div>
-
-
-            <div class="review-select">
-                <h4 class="review-select__title">
-                    ВАше Общее впечатление:
-                </h4>
-
-                <label class="review-select__field sedona-checkbox review-select__field&#45;&#45;indents10">
-                    <input class="sedona-checkbox__input" hidden checked type="checkbox">
-                    <div class="sedona-checkbox__checked">
-                        <svg class="svg">
-                            <use xlink:href="#icon-checked"></use>
-                        </svg>
-                    </div>
-                    <div class="sedona-checkbox__text sedona-checkbox__text&#45;&#45;ml10">Мост Дьявола</div>
-                </label>
-                <label class="review-select__field sedona-checkbox review-select__field&#45;&#45;indents10">
-                    <input class="sedona-checkbox__input" hidden checked type="checkbox">
-                    <div class="sedona-checkbox__checked">
-                        <svg class="svg">
-                            <use xlink:href="#icon-checked"></use>
-                        </svg>
-                    </div>
-                    <div class="sedona-checkbox__text sedona-checkbox__text&#45;&#45;ml10">Гора-Колокол</div>
-                </label>
-                <label class="review-select__field sedona-checkbox review-select__field&#45;&#45;indents10">
-                    <input class="sedona-checkbox__input" hidden checked type="checkbox">
-                    <div class="sedona-checkbox__checked">
-                        <svg class="svg">
-                            <use xlink:href="#icon-checked"></use>
-                        </svg>
-                    </div>
-                    <div class="sedona-checkbox__text sedona-checkbox__text&#45;&#45;ml10">Слайд-парк</div>
-                </label>
-                <label class="review-select__field sedona-checkbox review-select__field&#45;&#45;indents10">
-                    <input class="sedona-checkbox__input" hidden type="checkbox">
-                    <div class="sedona-checkbox__checked">
-                        <svg class="svg">
-                            <use xlink:href="#icon-checked"></use>
-                        </svg>
-                    </div>
-                    <div class="sedona-checkbox__text sedona-checkbox__text&#45;&#45;ml10">Красные скалы</div>
-                </label>
-
-            </div>
-
-        </div>-->
-
-<!--        <div class="h-400"></div>-->
 
         <div class="footer">
             <h3 class="footer__text">#visitSEDONA</h3>
-            <div class="social-icons">
+            <div class="social-icons social-icons--indent">
                 <div class="social__tweeter icon">
                     <svg class="svg">
                         <use xlink:href="#icon-twitter"></use>
