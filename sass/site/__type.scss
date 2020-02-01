@@ -7,7 +7,7 @@ h2 {
   }
 }
 
-h3 {
+h3, .h3 {
   text-transform: uppercase;
   @include font(bold, 18px, 26px);
   @media (min-width: $mobile) {

@@ -34,7 +34,7 @@
       color: rgba($white, .2);
     }
     &:disabled {
-      background-color: $primary-disable;
+      background-color: $darken-gray;
       cursor: auto;
     }
   }

@@ -7,7 +7,7 @@
 body {
   font-family: 'PT Sans', sans-serif;
   background-color: #f2f2f2;
-  min-width: 250px; }
+  min-width: 300px; }
   body a {
     text-decoration: none;
     color: #000; }
@@ -38,8 +38,9 @@ body {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+  display: none;
   opacity: .3;
-  z-index: 100;
+  z-index: 11;
   pointer-events: none;
   top: 13px; }
   @media (min-width: 540px) {
@@ -53,11 +54,8 @@ body {
           transform: translateX(-50%);
   display: none;
   opacity: .3;
-  z-index: 100;
+  z-index: 11;
   pointer-events: none; }
-  @media (min-width: 540px) {
-    .image-pos-tablet {
-      display: block; } }
   @media (min-width: 1200px) {
     .image-pos-tablet {
       display: none; } }
@@ -69,11 +67,8 @@ body {
           transform: translate(-50%, -0.4%);
   display: none;
   opacity: .3;
-  z-index: 100;
+  z-index: 11;
   pointer-events: none; }
-  @media (min-width: 1200px) {
-    .image-pos-desktop {
-      display: block; } }
 
 .content {
   background-color: #fff;
@@ -169,7 +164,7 @@ body {
     left: 50%;
     -webkit-transform: translate(-50%, 100%);
             transform: translate(-50%, 100%);
-    z-index: 99; }
+    z-index: 10; }
     @media (min-width: 540px) {
       .top-nav__logo {
         top: 0;
@@ -245,7 +240,7 @@ body {
   background-color: yellow;
   -webkit-transition: color .3s ease;
   transition: color .3s ease;
-  z-index: 100;
+  z-index: 999;
   -webkit-transform: translate(25%, 25%);
           transform: translate(25%, 25%);
   /*  @media (min-width: $tablet) {
@@ -677,7 +672,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 40px 0; }
+  padding: 40px 0;
+  background-color: #f2f2f2; }
   @media (min-width: 540px) {
     .footer {
       -webkit-box-orient: horizontal;
@@ -736,11 +732,11 @@ h2 {
     h2 {
       font: bold 30px/37px "PT Sans", sans-serif; } }
 
-h3 {
+h3, .h3 {
   text-transform: uppercase;
   font: bold 18px/26px "PT Sans", sans-serif; }
   @media (min-width: 540px) {
-    h3 {
+    h3, .h3 {
       font: bold 21px/26px "PT Sans", sans-serif; } }
 
 h4 {
@@ -1394,7 +1390,9 @@ h5, .h5 {
     width: 100%;
     margin-left: 15px;
     padding: 12px 15px;
-    background-color: #f2f2f2; }
+    background-color: #f2f2f2;
+    -webkit-transition: background-color 0.2s easy;
+    transition: background-color 0.2s easy; }
     .form-nik__input::-webkit-input-placeholder {
       color: #000; }
     .form-nik__input::-moz-placeholder {
@@ -1405,6 +1403,8 @@ h5, .h5 {
       color: #000; }
     .form-nik__input::placeholder {
       color: #000; }
+    .form-nik__input:hover {
+      background-color: #e5e5e5; }
   .form-nik--indents {
     margin: 10px 0 15px 0; }
     @media (min-width: 540px) {
@@ -1480,29 +1480,33 @@ h5, .h5 {
       .form-info__name--otstup {
         margin-left: 80px; } }
   .form-info__content {
-    width: 100%;
-    padding: 20px;
-    background-color: #f2f2f2; }
-    .form-info__content::-webkit-input-placeholder {
-      font: bold 18px/24px "PT Sans", sans-serif;
-      color: #000; }
-    .form-info__content::-moz-placeholder {
-      font: bold 18px/24px "PT Sans", sans-serif;
-      color: #000; }
-    .form-info__content:-ms-input-placeholder {
-      font: bold 18px/24px "PT Sans", sans-serif;
-      color: #000; }
-    .form-info__content::-ms-input-placeholder {
-      font: bold 18px/24px "PT Sans", sans-serif;
-      color: #000; }
-    .form-info__content::placeholder {
-      font: bold 18px/24px "PT Sans", sans-serif;
-      color: #000; }
-  .form-info__input {
     position: relative; }
     @media (min-width: 1200px) {
-      .form-info__input {
+      .form-info__content {
         width: 100%; } }
+  .form-info__input {
+    width: 100%;
+    padding: 20px;
+    background-color: #f2f2f2;
+    -webkit-transition: background-color 0.2s ease;
+    transition: background-color 0.2s ease; }
+    .form-info__input::-webkit-input-placeholder {
+      font: bold 18px/24px "PT Sans", sans-serif;
+      color: #000; }
+    .form-info__input::-moz-placeholder {
+      font: bold 18px/24px "PT Sans", sans-serif;
+      color: #000; }
+    .form-info__input:-ms-input-placeholder {
+      font: bold 18px/24px "PT Sans", sans-serif;
+      color: #000; }
+    .form-info__input::-ms-input-placeholder {
+      font: bold 18px/24px "PT Sans", sans-serif;
+      color: #000; }
+    .form-info__input::placeholder {
+      font: bold 18px/24px "PT Sans", sans-serif;
+      color: #000; }
+    .form-info__input:hover {
+      background-color: #e5e5e5; }
   .form-info__icon {
     position: absolute;
     top: 0;
@@ -1653,7 +1657,9 @@ h5, .h5 {
     height: 160px;
     width: 100%;
     padding: 15px 20px;
-    background-color: #f2f2f2; }
+    background-color: #f2f2f2;
+    -webkit-transition: background-color 0.2s ease;
+    transition: background-color 0.2s ease; }
     .form-emotion__textarea::-webkit-input-placeholder {
       font: bold 18px/24px "PT Sans", sans-serif;
       color: #000; }
@@ -1669,6 +1675,8 @@ h5, .h5 {
     .form-emotion__textarea::placeholder {
       font: bold 18px/24px "PT Sans", sans-serif;
       color: #000; }
+    .form-emotion__textarea:hover {
+      background-color: #e5e5e5; }
   .form-emotion--border {
     border-top: 1px solid #e5e5e5; }
     @media (min-width: 540px) {
@@ -1724,3 +1732,97 @@ h5, .h5 {
     @media (min-width: 540px) {
       .form-unnamed__mark {
         display: block; } }
+
+.success {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: #fff;
+  -webkit-box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.15);
+          box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.15);
+  text-align: center;
+  width: 320px;
+  -webkit-transition: width 0.2s easy;
+  transition: width 0.2s easy;
+  z-index: 50; }
+  @media (min-width: 540px) {
+    .success {
+      width: 640px; } }
+  .success__title {
+    padding-top: 50px;
+    padding-bottom: 40px; }
+    @media (min-width: 540px) {
+      .success__title {
+        padding-top: 65px; } }
+  .success__text {
+    text-transform: uppercase;
+    padding-bottom: 35px; }
+    @media (min-width: 540px) {
+      .success__text {
+        padding: 0 110px 35px 110px; } }
+    @media (min-width: 1200px) {
+      .success__text {
+        padding: 0 140px 35px 140px; } }
+  .success__block {
+    left: 0;
+    right: 0;
+    padding: 20px;
+    background-color: #f2f2f2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .success__btn {
+    text-align: center;
+    background-color: #81b3d2;
+    color: #fff;
+    padding: 20px 0;
+    width: 100%; }
+    @media (min-width: 540px) {
+      .success__btn {
+        width: 70%; } }
+
+.failure {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: #fff;
+  -webkit-box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.15);
+          box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.15);
+  text-align: center;
+  width: 320px;
+  -webkit-transition: width 0.2s easy;
+  transition: width 0.2s easy;
+  padding: 45px 65px;
+  z-index: 50; }
+  @media (min-width: 540px) {
+    .failure {
+      width: 400px; } }
+  .failure__title {
+    padding-bottom: 40px; }
+  .failure__text {
+    text-transform: uppercase; }
+    @media (min-width: 540px) {
+      .failure__text {
+        padding-bottom: 30px; } }
+  .failure__btn {
+    text-align: center;
+    background-color: #81b3d2;
+    color: #fff;
+    margin: 0 auto;
+    padding: 20px 0;
+    width: 100%; }
+    @media (min-width: 540px) {
+      .failure__btn {
+        width: 70%; } }

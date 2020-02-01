@@ -7,7 +7,7 @@
 body {
   font-family: 'PT Sans', sans-serif;
   background-color: $body-bg;
-  min-width: 250px;
+  min-width: 300px;
   a {
     text-decoration: none;
     color: $secondary;
@@ -42,9 +42,9 @@ body {
   left: 50%;
   transform: translateX(-50%);
   //transform: translate(-50%, 11%);
-  //display: none;
+  display: none;
   opacity: .3;
-  z-index: 100;
+  z-index: 11;
   pointer-events: none;
   top: 13px;
   @media (min-width: $mobile) {
@@ -58,10 +58,10 @@ body {
   //transform: translate(-50%, 11%);
   display: none;
   opacity: .3;
-  z-index: 100;
+  z-index: 11;
   pointer-events: none;
   @media (min-width: $mobile) {
-    display: block;
+    //display: block;
   }
   @media (min-width: $desktop) {
     display: none;
@@ -74,10 +74,10 @@ body {
   transform: translate(-50%, -0.4%);
   display: none;
   opacity: .3;
-  z-index: 100;
+  z-index: 11;
   pointer-events: none;
   @media (min-width: $desktop) {
-    display: block;
+    //display: block;
   }
 }
 

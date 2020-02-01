@@ -5,7 +5,7 @@
   border-radius: 50%;
   background-color: yellow;
   transition: color .3s ease ;
-  z-index: 100;
+  z-index: 999;
   transform: translate(25%, 25%);
   @media (min-width: $mobile) {
     background-color: deeppink;

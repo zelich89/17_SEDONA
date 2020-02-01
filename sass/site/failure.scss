@@ -1,0 +1,39 @@
+.failure {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: $white;
+  box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.15);
+  text-align: center;
+  width: 320px;
+  transition: width $transition-time easy;
+  padding: 45px 65px;
+  z-index: 50;
+  @media (min-width: $mobile) {
+    width: 400px;
+  }
+  &__title {
+    padding-bottom: 40px;
+    @media (min-width: $mobile) {
+    }
+  }
+  &__text {
+    text-transform: uppercase;
+    @media (min-width: $mobile) {
+      padding-bottom: 30px;
+    }
+  }
+  &__btn {
+    text-align: center;
+    background-color: $primary;
+    color: $white;
+    margin: 0 auto;
+    padding: 20px 0;
+    width: 100%;
+    @media (min-width: $mobile) {
+      width: 70%;
+    }
+  }
+}

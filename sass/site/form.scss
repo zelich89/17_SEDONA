@@ -72,9 +72,13 @@
       margin-left: 15px;
       padding: 12px 15px;
       background-color: $body-bg;
+      transition: background-color $transition-time easy;
       &::placeholder {
         color: $secondary;
         @include input-placeholder;
+      }
+      &:hover {
+        background-color: $darken-gray;
       }
     }
     &--indents {
@@ -159,19 +163,23 @@
       }
     }
     &__content {
+      position: relative;
+      @media (min-width: $desktop) {
+        width: 100%;
+      }
+    }
+    &__input {
       width: 100%;
       padding: 20px;
       background-color: $body-bg;
+      transition: background-color $transition-time ease;
       &::placeholder {
         @include font(bold, 18px, 24px);
         color: $secondary;
         @include input-placeholder;
       }
-    }
-    &__input {
-      position: relative;
-      @media (min-width: $desktop) {
-        width: 100%;
+      &:hover {
+        background-color: $darken-gray;
       }
     }
     &__icon {
@@ -339,10 +347,14 @@
       width: 100%;
       padding: 15px 20px;
       background-color: $body-bg;
+      transition: background-color $transition-time ease;
       &::placeholder {
         @include font(bold, 18px, 24px);
         color: $secondary;
         @include input-placeholder;
+      }
+      &:hover {
+        background-color: $darken-gray;
       }
     }
     &--border {
@@ -385,7 +397,7 @@
         color: rgba($white, .2);
       }
       &:disabled {
-        background-color: $primary-disable;
+        background-color: $darken-gray;
         cursor: auto;
       }
     }

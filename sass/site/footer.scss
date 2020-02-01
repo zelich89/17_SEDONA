@@ -3,6 +3,7 @@
   flex-direction: column;
   align-items: center;
   padding: 40px 0;
+  background-color: $body-bg;
   @media (min-width: $mobile) {
     flex-direction: row;
     justify-content: space-around;

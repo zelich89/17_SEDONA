@@ -1,0 +1,53 @@
+.success {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: $white;
+  box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.15);
+  text-align: center;
+  width: 320px;
+  transition: width $transition-time easy;
+  //height: 200px;
+  z-index: 50;
+  @media (min-width: $mobile) {
+    width: 640px;
+  }
+  &__title {
+    padding-top: 50px;
+    padding-bottom: 40px;
+    @media (min-width: $mobile) {
+      padding-top: 65px;
+    }
+  }
+  &__text {
+    text-transform: uppercase;
+    padding-bottom: 35px;
+    @media (min-width: $mobile) {
+      padding: 0 110px 35px 110px;
+    }
+    @media (min-width: $desktop) {
+      padding: 0 140px 35px 140px;
+    }
+  }
+  &__block {
+    left: 0;
+    right: 0;
+    padding: 20px;
+    background-color: $body-bg;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__btn {
+    text-align: center;
+    background-color: $primary;
+    color: $white;
+    padding: 20px 0;
+    width: 100%;
+    @media (min-width: $mobile) {
+      width: 70%;
+    }
+   }
+}
