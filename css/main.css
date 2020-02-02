@@ -74,7 +74,7 @@ body {
   background-color: #fff;
   -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
           box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-  max-width: 1200px;
+  max-width: 1100px;
   margin: 0 auto; }
 
 .top-nav {
@@ -1292,7 +1292,9 @@ h5, .h5 {
             justify-content: center;
     cursor: pointer;
     -webkit-transition: background 0.2s ease;
-    transition: background 0.2s ease; }
+    transition: background 0.2s ease;
+    -ms-flex-negative: 0;
+        flex-shrink: 0; }
     .sedona-checkbox__checked:hover {
       background: #e5e5e5; }
     .sedona-checkbox__checked .svg {
@@ -1853,7 +1855,7 @@ h5, .h5 {
         width: 70%; } }
 
 .grid {
-  max-width: 1200px;
+  max-width: 1100px;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1899,6 +1901,9 @@ h5, .h5 {
     width: 100%; }
     .grid__items:nth-child(5) .grid__item {
       width: 25%; } }
+    @media (min-width: 540px) and (min-width: 1200px) {
+      .grid__items:nth-child(5) .grid__item {
+        width: 50%; } }
 
 @media (min-width: 1200px) {
   .grid__items:nth-child(3) {
