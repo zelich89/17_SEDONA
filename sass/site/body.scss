@@ -61,7 +61,7 @@ body {
   z-index: 11;
   pointer-events: none;
   @media (min-width: $mobile) {
-    display: block;
+    //display: block;
   }
   @media (min-width: $desktop) {
     display: none;
@@ -77,7 +77,7 @@ body {
   z-index: 11;
   pointer-events: none;
   @media (min-width: $desktop) {
-    display: block;
+    //display: block;
   }
 }
 
