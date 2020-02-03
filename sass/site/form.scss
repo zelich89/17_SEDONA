@@ -191,6 +191,10 @@
     &__input {
       width: 100%;
       padding: 20px;
+      padding-right: 58px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
       background-color: $body-bg;
       transition: background-color $transition-time ease;
       &::placeholder {
@@ -395,7 +399,7 @@
       text-align: center;
       background-color: $primary;
       color: $white;
-      transition: all .2s ease;
+      transition: all $transition-time ease;
       cursor: pointer;
       outline: none;
       &:hover {
@@ -422,7 +426,7 @@
       text-align: center;
       background-color: $primary;
       color: $white;
-      transition: all .2s ease;
+      transition: all $transition-time ease;
       cursor: pointer;
       outline: none;
       &:hover {

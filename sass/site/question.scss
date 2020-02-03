@@ -23,7 +23,7 @@
     width: 100%;
     background-color: $primary;
     color: $white;
-    transition: all .2s ease;
+    transition: all $transition-time ease;
     cursor: pointer;
     outline: none;
     &:hover {

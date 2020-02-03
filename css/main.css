@@ -133,8 +133,8 @@ body {
     font: bold 18px/24px "PT Sans", sans-serif;
     text-align: center;
     padding: 17px 0;
-    -webkit-transition: all .2s ease;
-    transition: all .2s ease; }
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease; }
     @media (min-width: 540px) {
       .top-nav__item {
         width: 20%;
@@ -238,8 +238,8 @@ body {
   height: 20px;
   border-radius: 50%;
   background-color: yellow;
-  -webkit-transition: color .3s ease;
-  transition: color .3s ease;
+  -webkit-transition: color 0.2s ease;
+  transition: color 0.2s ease;
   z-index: 999;
   -webkit-transform: translate(25%, 25%);
           transform: translate(25%, 25%);
@@ -610,8 +610,8 @@ body {
     width: 100%;
     background-color: #81b3d2;
     color: #fff;
-    -webkit-transition: all .2s ease;
-    transition: all .2s ease;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
     cursor: pointer;
     outline: none; }
     @media (min-width: 540px) {
@@ -641,8 +641,8 @@ body {
     height: 48px;
     background-color: #81b3d2;
     color: #fff;
-    -webkit-transition: all .2s ease;
-    transition: all .2s ease;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
     cursor: pointer;
     outline: none; }
     .social-icons .icon svg {
@@ -718,8 +718,8 @@ body {
   .footer__logo {
     color: #000;
     margin-left: 10px;
-    -webkit-transition: color .2s ease;
-    transition: color .2s ease; }
+    -webkit-transition: color 0.2s ease;
+    transition: color 0.2s ease; }
     .footer__logo:hover {
       color: #81b3d2; }
     .footer__logo:active {
@@ -1499,6 +1499,10 @@ h5, .h5 {
     .form-info__input {
       width: 100%;
       padding: 20px;
+      padding-right: 58px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
       background-color: #f2f2f2;
       -webkit-transition: background-color 0.2s ease;
       transition: background-color 0.2s ease; }
@@ -1691,8 +1695,8 @@ h5, .h5 {
       text-align: center;
       background-color: #81b3d2;
       color: #fff;
-      -webkit-transition: all .2s ease;
-      transition: all .2s ease;
+      -webkit-transition: all 0.2s ease;
+      transition: all 0.2s ease;
       cursor: pointer;
       outline: none; }
       @media (min-width: 540px) {
@@ -1715,8 +1719,8 @@ h5, .h5 {
       text-align: center;
       background-color: #81b3d2;
       color: #fff;
-      -webkit-transition: all .2s ease;
-      transition: all .2s ease;
+      -webkit-transition: all 0.2s ease;
+      transition: all 0.2s ease;
       cursor: pointer;
       outline: none; }
       @media (min-width: 540px) {
