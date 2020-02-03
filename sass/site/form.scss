@@ -18,7 +18,9 @@
     margin: 0 auto;
     width: 90%;
     &__title {
-      padding-bottom: 30px;
+      &--indents {
+        padding-bottom: 30px;
+      }
     }
     &__text {
       line-height: 22px;
@@ -46,10 +48,11 @@
     width: 100%;
     text-align: center;
     &__title {
-      padding-bottom: 15px;
       @media (min-width: $mobile) {
-        margin-left: 15px;
-        padding-bottom: 50px;
+        &--indents {
+          margin-left: 15px;
+          padding-bottom: 50px;
+        }
       }
       &--indents {
         padding: 20px;
@@ -88,7 +91,7 @@
     &__input {
       font-weight: bold;
       width: 100%;
-      margin-left: 15px;
+      //margin-left: 15px;
       padding: 15px;
       background-color: $body-bg;
       transition: background-color $transition-time ease;
@@ -171,11 +174,13 @@
         }
       }
       &--otstup {
+      }
+      .span {
         @media (min-width: $desktop) {
-          margin-left: 80px;
+          display: none;
         }
       }
-    }
+      }
     &__content {
       position: relative;
       @media (min-width: $desktop) {
@@ -293,10 +298,10 @@
       }
     }
     &__field {
-      width: 250px;
+/*      width: 250px;
       @media (min-width: $desktop) {
         width: 50%;
-      }
+      }*/
       &--indents {
         margin: 10px 0;
         @media (min-width: $tablet) {

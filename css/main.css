@@ -1262,8 +1262,8 @@ h5, .h5 {
             transform: scale(1); }
   .sedona-radiobox__text {
     font-weight: bold; }
-    .sedona-radiobox__text--ml25 {
-      margin-left: 25px; }
+    .sedona-radiobox__text--ml20 {
+      margin-left: 20px; }
 
 .sedona-checkbox {
   display: -webkit-box;
@@ -1310,7 +1310,8 @@ h5, .h5 {
     -webkit-transform: scale(1);
             transform: scale(1); }
   .sedona-checkbox__text {
-    font-weight: bold; }
+    font-weight: bold;
+    white-space: nowrap; }
     .sedona-checkbox__text--ml25 {
       margin-left: 25px; }
 
@@ -1339,7 +1340,7 @@ h5, .h5 {
     text-align: center;
     margin: 0 auto;
     width: 90%; }
-    .form-head__title {
+    .form-head__title--indents {
       padding-bottom: 30px; }
     .form-head__text {
       line-height: 22px;
@@ -1362,21 +1363,19 @@ h5, .h5 {
   .form-ident {
     width: 100%;
     text-align: center; }
-    .form-ident__title {
-      padding-bottom: 15px; }
-      @media (min-width: 540px) {
-        .form-ident__title {
-          margin-left: 15px;
-          padding-bottom: 50px; } }
+    @media (min-width: 540px) {
       .form-ident__title--indents {
-        padding: 20px; }
-        @media (min-width: 540px) {
-          .form-ident__title--indents {
-            padding-left: 40px;
-            padding-bottom: 50px; } }
-        @media (min-width: 1200px) {
-          .form-ident__title--indents {
-            padding: 0; } }
+        margin-left: 15px;
+        padding-bottom: 50px; } }
+    .form-ident__title--indents {
+      padding: 20px; }
+      @media (min-width: 540px) {
+        .form-ident__title--indents {
+          padding-left: 40px;
+          padding-bottom: 50px; } }
+      @media (min-width: 1200px) {
+        .form-ident__title--indents {
+          padding: 0; } }
     @media (min-width: 540px) {
       .form-ident {
         text-align: start; } }
@@ -1402,7 +1401,6 @@ h5, .h5 {
     .form-nik__input {
       font-weight: bold;
       width: 100%;
-      margin-left: 15px;
       padding: 15px;
       background-color: #f2f2f2;
       -webkit-transition: background-color 0.2s ease;
@@ -1485,8 +1483,8 @@ h5, .h5 {
             padding-bottom: 0;
             padding-right: 15px; } }
       @media (min-width: 1200px) {
-        .form-info__name--otstup {
-          margin-left: 80px; } }
+        .form-info__name .span {
+          display: none; } }
     .form-info__content {
       position: relative; }
       @media (min-width: 1200px) {
@@ -1603,10 +1601,10 @@ h5, .h5 {
           .form-select__title--indents {
             padding-bottom: 40px; } }
     .form-select__field {
-      width: 250px; }
-      @media (min-width: 1200px) {
-        .form-select__field {
-          width: 50%; } }
+      /*      width: 250px;
+      @media (min-width: $desktop) {
+        width: 50%;
+      }*/ }
       .form-select__field--indents {
         margin: 10px 0; }
         @media (min-width: 768px) {

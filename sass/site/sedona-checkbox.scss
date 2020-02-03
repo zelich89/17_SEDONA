@@ -29,6 +29,7 @@
   }
   &__text {
     font-weight: bold;
+    white-space: nowrap;
     &--ml25 {
       margin-left: 25px;
     }
