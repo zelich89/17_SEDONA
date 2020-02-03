@@ -89,6 +89,7 @@
     align-items: center;
     text-transform: uppercase;
     &__input {
+      position: relative;
       font-weight: bold;
       width: 100%;
       //margin-left: 15px;

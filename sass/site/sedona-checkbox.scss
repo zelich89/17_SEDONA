@@ -16,6 +16,10 @@
     &:hover {
       background: $btn-hover-color;
     }
+    &:active {
+      background-color: $btn-dis;
+      color: $btn-in-dis;
+    }
     .svg {
       @include square-size(40px);
       transform: scale(0);

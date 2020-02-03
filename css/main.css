@@ -153,7 +153,7 @@ body {
           display: none; } }
     .top-nav__item:hover {
       color: #81b3d2; }
-    .top-nav__item:visited {
+    .top-nav__item:active {
       opacity: .3; }
   .top-nav__item-logo {
     width: 20%;
@@ -652,7 +652,7 @@ body {
       margin-right: 6px; }
     .social-icons .icon:hover {
       background-color: #669ec0; }
-    .social-icons .icon:visited {
+    .social-icons .icon:active {
       background-color: #669ec0;
       color: rgba(255, 255, 255, 0.2); }
   .social-icons--indent {
@@ -722,7 +722,7 @@ body {
     transition: color .2s ease; }
     .footer__logo:hover {
       color: #81b3d2; }
-    .footer__logo:visited {
+    .footer__logo:active {
       color: #cccccc; }
 
 h2 {
@@ -1253,10 +1253,12 @@ h5, .h5 {
       border-radius: 50%;
       -webkit-transform: scale(0);
               transform: scale(0);
-      -webkit-transition: -webkit-transform 0.2s ease;
-      transition: -webkit-transform 0.2s ease;
-      transition: transform 0.2s ease;
-      transition: transform 0.2s ease, -webkit-transform 0.2s ease; }
+      -webkit-transition: all 0.2s ease;
+      transition: all 0.2s ease; }
+    .sedona-radiobox__radioed:active {
+      background-color: #d5d5d5; }
+      .sedona-radiobox__radioed:active:after {
+        background-color: #a4a4a4; }
   .sedona-radiobox__input:checked ~ .sedona-radiobox__radioed:after {
     -webkit-transform: scale(1);
             transform: scale(1); }
@@ -1297,6 +1299,9 @@ h5, .h5 {
         flex-shrink: 0; }
     .sedona-checkbox__checked:hover {
       background: #e5e5e5; }
+    .sedona-checkbox__checked:active {
+      background-color: #d5d5d5;
+      color: #a4a4a4; }
     .sedona-checkbox__checked .svg {
       width: 40px;
       height: 40px;
@@ -1399,6 +1404,7 @@ h5, .h5 {
             align-items: center;
     text-transform: uppercase; }
     .form-nik__input {
+      position: relative;
       font-weight: bold;
       width: 100%;
       padding: 15px;
