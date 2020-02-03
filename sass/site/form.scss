@@ -331,12 +331,6 @@
 
   &-emotion {
     width: 100%;
-    @media (min-width: $tablet) {
-      padding: 30px 60px;
-    }
-    @media (min-width: $desktop) {
-      padding: 38px 120px 30px 120px;
-    }
     &__title {
       margin: 0 auto;
       text-align: center;
