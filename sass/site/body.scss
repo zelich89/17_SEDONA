@@ -37,47 +37,57 @@ body {
   background-color: #000;
 }
 
+.visible-after-mobile {
+  display: none;
+  @media (min-width: $mobile) {
+    display: block;
+  }
+}
+
 .image-pos-mobile {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  //transform: translate(-50%, 11%);
-  display: none;
   opacity: .3;
   z-index: 11;
   pointer-events: none;
   top: 13px;
-  @media (min-width: $mobile) {
-    display: none;
+  display: none;
+  @if $maket-visible == 1 {
+    display: block;
+    @media (min-width: $mobile) {
+      display: none;
+  }
   }
 }
 .image-pos-tablet {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  //transform: translate(-50%, 11%);
-  display: none;
   opacity: .3;
   z-index: 11;
   pointer-events: none;
-  @media (min-width: $mobile) {
-    //display: block;
-  }
-  @media (min-width: $desktop) {
-    display: none;
+  display: none;
+  @if $maket-visible == 1 {
+    @media (min-width: $mobile) {
+      display: block;
+    }
+    @media (min-width: $desktop) {
+      display: none;
+    }
   }
 }
 .image-pos-desktop {
   position: absolute;
   left: 50%;
-  //transform: translateX(-50%);
-  transform: translate(-50%, -0.4%);
-  display: none;
+  transform: translateX(-50%);
   opacity: .3;
   z-index: 11;
   pointer-events: none;
-  @media (min-width: $desktop) {
-    //display: block;
+  display: none;
+  @if $maket-visible == 1 {
+    @media (min-width: $desktop) {
+      display: block;
+    }
   }
 }
-

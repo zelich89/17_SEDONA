@@ -3,17 +3,8 @@
   align-items: center;
   user-select: none;
   &__radioed {
-    @include square-size(56px);
-    background: $body-bg;
+    @extend .sedona-buttons;
     border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    transition: background $transition-time ease;
-    &:hover {
-      background: $btn-hover-color;
-    }
     &:after {
       content: "";
       background: $secondary;

@@ -159,178 +159,178 @@
             <div class="main-picture__triangle"> </div>
         </div>
 
-        <div class="grid">
-            <div class="grid__items">
-                <div class="grid__item">
-                    <div class="form-head">
-                        <h2 class="form-head__title">Оставьте свой отзыв!</h2>
-                        <div class="form-head__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях
+
+        <div class="grid-wrap">
+            <div class="form-head form-head--indent">
+                <h2 class="form-head__title form-head__title--indent">Оставьте свой отзыв!</h2>
+                <div class="form-head__text">
+                    Помогите нашим отелям стать лучше! оставьте отзыв о них,<br class="visible-after-mobile"> а также о посещенных вами достопримечательностях
+                </div>
+            </div>
+            <div class="grid">
+
+                <div class="grid__items grid__items--block-indent">
+                    <div class="form-ident form-ident--border form-ident--indent">
+                        <h3 class="form-ident__title form-ident__title--indent">
+                            Представьтесь:
+                        </h3>
+                        <div class="grid__item form-nik form-nik--indent">
+                            <div class="form-nik__name">Имя*:</div>
+                            <input type="text" class="form-nik__input h5"  placeholder="Пётр">
+                        </div>
+                        <div class="grid__item form-nik form-nik--indent">
+                            <div class="form-nik__name">Фамилия*:</div>
+                            <input type="text" class="form-nik__input h5"  placeholder="Иванов">
+                        </div>
+                        <div class="grid__item form-nik form-nik--indent">
+                            <div class="form-nik__name">Отчество:</div>
+                            <input type="text" class="form-nik__input h5"  placeholder="Александрович">
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="grid__items">
-                <div class="form-ident">
-                    <h3 class="form-ident__title">
-                        Представьтесь:
-                    </h3>
-                    <div class="grid__item form-nik">
-                        Имя*:
-                        <input type="text" class="form-nik__input h5"  placeholder="Пётр">
-                    </div>
-                    <div class="grid__item form-nik">
-                        Фамилия*:
-                        <input type="text" class="form-nik__input h5"  placeholder="Иванов">
-                    </div>
-                    <div class="grid__item form-nik">
-                        Отчество:
-                        <input type="text" class="form-nik__input h5"  placeholder="Александрович">
+                <div class="grid__items grid__items--block-indent">
+                    <div class="form-info form-info--border">
+                        <h3 class="form-info__title form-info__title--indent">
+                            Контактная информация:
+                        </h3>
+                        <div class="form-info__obertka">
+                            <div class="grid__item">
+                                <div class="form-info__block form-info__block--indent form-info__block--otstup">
+                                    <div class="form-info__name form-info__name--indent">
+                                        <span class="span">Контактный </span>телефон*:
+                                    </div>
+                                    <div class="form-info__content">
+                                        <input class="form-info__input" type="text" placeholder="Введите телефон">
+                                        <div class="form-info__icon">
+                                            <svg class="svg">
+                                                <use xlink:href="#icon-phone "></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid__item">
+                                <div class="form-info__block">
+                                    <div class="form-info__name form-info__name--indent">
+                                        Электронная почта*:
+                                    </div>
+                                    <div class="form-info__content">
+                                        <input class="form-info__input" type="text" placeholder="Введите e-mail">
+                                        <div class="form-info__icon">
+                                            <svg class="svg">
+                                                <use xlink:href="#icon-mail"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="grid__items">
-                <div class="form-info">
-                    <h3 class="form-info__title">
-                        Контактная информация:
-                    </h3>
-                    <div class="form-info__obertka">
+                <div class="grid__items grid__items--block-indent">
+                    <div class="form-choose form-choose--border">
+                        <h3 class="form-choose__title form-choose__title--indent">
+                            ВАше Общее впечатлениЕ:
+                        </h3>
                         <div class="grid__item">
-                            <div class="form-info__block">
-                                <div class="form-info__name">
-                                    <span class="span">Контактный </span>телефон*:
-                                </div>
-                                <div class="form-info__content">
-                                    <input class="form-info__input" type="text" placeholder="Введите телефон">
-                                    <div class="form-info__icon">
-                                        <svg class="svg">
-                                            <use xlink:href="#icon-phone "></use>
-                                        </svg>
-                                    </div>
-                                </div>
-                            </div>
+                            <label class="form-choose__field sedona-radiobox form-choose__field--indent">
+                                <input class="sedona-radiobox__input" hidden checked type="radio" name="choose">
+                                <div class="sedona-radiobox__radioed"></div>
+                                <h5 class="sedona-radiobox__text sedona-radiobox__text--ml20">Скорее положительное</h5>
+                            </label>
                         </div>
                         <div class="grid__item">
-                            <div class="form-info__block">
-                                <div class="form-info__name">
-                                    Электронная почта*:
+                            <label class="form-choose__field sedona-radiobox form-choose__field--indent">
+                                <input class="sedona-radiobox__input" hidden type="radio" name="choose">
+                                <div class="sedona-radiobox__radioed"></div>
+                                <h5 class="sedona-radiobox__text sedona-radiobox__text--ml20">Скорее отрицательное</h5>
+                            </label>
+                        </div>
+                        <div class="grid__item">
+                            <label class="form-choose__field sedona-radiobox">
+                                <input class="sedona-radiobox__input" hidden type="radio" name="choose">
+                                <div class="sedona-radiobox__radioed"></div>
+                                <h5 class="sedona-radiobox__text sedona-radiobox__text--ml20">Затрудняюсь ответить</h5>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid__items grid__items--block-indent">
+                    <div class="form-select form-select--border">
+                        <h3 class="form-select__title form-select__title--indent">
+                            посещенные
+                            <br>
+                            достопримечательности:
+                        </h3>
+
+                        <div class="form__cover-desktop">
+                            <div class="form__cover-tablet">
+                                <div class="grid__item">
+                                    <label class="form-select__field sedona-checkbox">
+                                        <input class="sedona-checkbox__input" hidden checked type="checkbox">
+                                        <div class="sedona-checkbox__checked">
+                                            <svg class="svg">
+                                                <use xlink:href="#icon-checked"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="sedona-checkbox__text sedona-checkbox__text--ml25 h5">Мост Дьявола</div>
+                                    </label>
                                 </div>
-                                <div class="form-info__content">
-                                    <input class="form-info__input" type="text" placeholder="Введите e-mail">
-                                    <div class="form-info__icon">
-                                        <svg class="svg">
-                                            <use xlink:href="#icon-mail"></use>
-                                        </svg>
-                                    </div>
+                                <div class="grid__item">
+                                    <label class="form-select__field sedona-checkbox">
+                                        <input class="sedona-checkbox__input" hidden checked type="checkbox">
+                                        <div class="sedona-checkbox__checked">
+                                            <svg class="svg">
+                                                <use xlink:href="#icon-checked"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="sedona-checkbox__text sedona-checkbox__text--ml25 h5">Гора-Колокол</div>
+                                    </label>
                                 </div>
                             </div>
+
+                            <div class="form__cover-tablet">
+                                <div class="grid__item">
+                                    <label class="form-select__field sedona-checkbox">
+                                        <input class="sedona-checkbox__input" hidden checked type="checkbox">
+                                        <div class="sedona-checkbox__checked">
+                                            <svg class="svg">
+                                                <use xlink:href="#icon-checked"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="sedona-checkbox__text sedona-checkbox__text--ml25 h5">Слайд-парк</div>
+                                    </label>
+                                </div>
+                                <div class="grid__item">
+                                    <label class="form-select__field sedona-checkbox form-select__field--temp-mb-0">
+                                        <input class="sedona-checkbox__input" hidden type="checkbox">
+                                        <div class="sedona-checkbox__checked">
+                                            <svg class="svg">
+                                                <use xlink:href="#icon-checked"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="sedona-checkbox__text sedona-checkbox__text--ml25 h5">Красные скалы</div>
+                                    </label>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="grid__items">
-                <div class="form-choose form-choose--border" >
-                    <h3 class="form-choose__title">
-                        ВАше Общее впечатлениЕ:
-                    </h3>
-                    <div class="grid__item">
-                        <label class="form-choose__field sedona-radiobox">
-                            <input class="sedona-radiobox__input" hidden checked type="radio" name="choose">
-                            <div class="sedona-radiobox__radioed"></div>
-                            <h5 class="sedona-radiobox__text sedona-radiobox__text--ml20">Скорее положительное</h5>
-                        </label>
-                    </div>
-                    <div class="grid__item">
-                        <label class="form-choose__field sedona-radiobox">
-                            <input class="sedona-radiobox__input" hidden type="radio" name="choose">
-                            <div class="sedona-radiobox__radioed"></div>
-                            <h5 class="sedona-radiobox__text sedona-radiobox__text--ml20">Скорее отрицательное</h5>
-                        </label>
-                    </div>
-                    <div class="grid__item">
-                        <label class="form-choose__field sedona-radiobox">
-                            <input class="sedona-radiobox__input" hidden type="radio" name="choose">
-                            <div class="sedona-radiobox__radioed"></div>
-                            <h5 class="sedona-radiobox__text sedona-radiobox__text--ml20">Затрудняюсь ответить</h5>
-                        </label>
-                    </div>
-                </div>
-            </div>
-
-            <div class="grid__items">
-                <div class="form-select form-select--border">
-                    <h3 class="form-select__title">
-                        посещенные
-                        <br>
-                        достопримечательности:
-                    </h3>
-
-                    <div class="form__cover-desktop">
-                        <div class="form__cover-tablet">
-                            <div class="grid__item">
-                                <label class="form-select__field sedona-checkbox">
-                                    <input class="sedona-checkbox__input" hidden checked type="checkbox">
-                                    <div class="sedona-checkbox__checked">
-                                        <svg class="svg">
-                                            <use xlink:href="#icon-checked"></use>
-                                        </svg>
-                                    </div>
-                                    <div class="sedona-checkbox__text sedona-checkbox__text--ml25 h5">Мост Дьявола</div>
-                                </label>
-                            </div>
-                            <div class="grid__item">
-                                <label class="form-select__field sedona-checkbox">
-                                    <input class="sedona-checkbox__input" hidden checked type="checkbox">
-                                    <div class="sedona-checkbox__checked">
-                                        <svg class="svg">
-                                            <use xlink:href="#icon-checked"></use>
-                                        </svg>
-                                    </div>
-                                    <div class="sedona-checkbox__text sedona-checkbox__text--ml25 h5">Гора-Колокол</div>
-                                </label>
-                            </div>
+                <div class="grid__items grid__items--block-indent">
+                    <div class="form-emotion form-emotion--border">
+                        <h3 class="form-emotion__title form-emotion__title--indent">
+                            Опишите 3вои эмоции:
+                        </h3>
+                        <textarea class="form-emotion__textarea h5 form-emotion__textarea--indent" placeholder="Опишите подробно все свои восторги "></textarea>
+                        <div class="form-unnamed__wrap">
+                            <h3 class="form-emotion__button">ОТПРАВИТЬ ОТЗЫВ</h3>
+                            <div class="form-unnamed__mark">* — обязательные поля</div>
                         </div>
-
-                        <div class="form__cover-tablet">
-                            <div class="grid__item">
-                                <label class="form-select__field sedona-checkbox">
-                                    <input class="sedona-checkbox__input" hidden checked type="checkbox">
-                                    <div class="sedona-checkbox__checked">
-                                        <svg class="svg">
-                                            <use xlink:href="#icon-checked"></use>
-                                        </svg>
-                                    </div>
-                                    <div class="sedona-checkbox__text sedona-checkbox__text--ml25 h5">Слайд-парк</div>
-                                </label>
-                            </div>
-                            <div class="grid__item">
-                                <label class="form-select__field sedona-checkbox form-select__field--temp-mb-0">
-                                    <input class="sedona-checkbox__input" hidden type="checkbox">
-                                    <div class="sedona-checkbox__checked">
-                                        <svg class="svg">
-                                            <use xlink:href="#icon-checked"></use>
-                                        </svg>
-                                    </div>
-                                    <div class="sedona-checkbox__text sedona-checkbox__text--ml25 h5">Красные скалы</div>
-                                </label>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-            <div class="grid__items">
-                <div class="form-emotion form-emotion--border">
-                    <h3 class="form-emotion__title">
-                        Опишите 3вои эмоции:
-                    </h3>
-                    <textarea class="form-emotion__textarea h5" placeholder="Опишите подробно все свои восторги "></textarea>
-                    <div class="form-unnamed__wrap">
-                        <h3 class="form-emotion__button">ОТПРАВИТЬ ОТЗЫВ</h3>
-                        <div class="form-unnamed__mark">* — обязательные поля</div>
                     </div>
                 </div>
             </div>

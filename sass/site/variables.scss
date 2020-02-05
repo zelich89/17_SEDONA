@@ -27,7 +27,14 @@ $btn-in-dis: #a4a4a4;
 
 
 //Grid
-$content-width: 1100px;
+$content-width: 1200px;
+
+$content-wrap: 960px;
+
+$content-mobile-wrap: 280px;
+$content-tablet-wrap: 640px;
+$content-desktop-wrap: 970px;
+
 $content-gutter: 20px;
 
 //Breakpoints
@@ -37,3 +44,6 @@ $desktop: 1200px;
 
 //Time
 $transition-time: .2s;
+
+// Maket
+$maket-visible: 0; // 0 - Invisible | 1 - Visible

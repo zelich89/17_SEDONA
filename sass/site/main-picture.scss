@@ -45,14 +45,20 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%,-67%);
     pointer-events: none;
   }
   &--form {
     background-position-y: bottom;
-    height: 158px;
+    height: 160px;
+    margin-bottom: 40px;
     @media (min-width: $mobile) {
       height: 290px;
+      margin-bottom: 65px;
+    }
+    @media (min-width: $desktop) {
+      height: 300px;
+      margin-bottom: 105px;
     }
   }
 }
