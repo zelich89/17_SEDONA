@@ -73,12 +73,21 @@
 }
 
 .border-mobile-top {
-  border-top: 1px solid #e5e5e5;
-  padding-top: 25px;
-  @media (min-width: $mobile) {
-    border: none;
-    padding-top: 0;
+  &:before {
+    content: '';
+    position: absolute;
+    top: -25px;
+    left: -25px;
+    right: -25px;
+    border-top: 2px solid #e5e5e5;
+    padding-top: 25px;
+    @media (min-width: $mobile) {
+      border-top: none;
+      padding-top: 0;
+    }
   }
+  //border-top: 2px solid #e5e5e5;
+  //padding-top: 25px;
 }
 
 .text-truncate {
