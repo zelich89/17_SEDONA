@@ -264,8 +264,7 @@ body {
   height: 390px;
   background: url(../img/back-mobile.jpg) no-repeat top center/cover;
   position: relative;
-  resize: both;
-  overflow: auto; }
+  resize: both; }
   @media (min-width: 540px) {
     .main-picture {
       height: 518px; } }
@@ -685,16 +684,16 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 50px 0;
-  background-color: #f2f2f2; }
+  padding: 50px 0; }
   @media (min-width: 540px) {
     .footer {
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
           -ms-flex-direction: row;
               flex-direction: row;
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
       padding: 65px 0; } }
   @media (min-width: 1200px) {
     .footer {
@@ -1293,6 +1292,11 @@ h5, .h5 {
             transform: scale(1); }
   .sedona-checkbox__text {
     font-weight: bold; }
+    .sedona-checkbox__text--truncate {
+      width: 125px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap; }
     .sedona-checkbox__text--ml25 {
       margin-left: 25px; }
 
