@@ -2,15 +2,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 50px 0;
+  padding-bottom: 50px;
   //background-color: $body-bg;
   @media (min-width: $mobile) {
     flex-direction: row;
     justify-content: space-between;
-    padding: 65px 0;
+    padding-bottom: 65px;
   }
   @media (min-width: $desktop) {
-    padding: 70px 0;
+    padding-bottom: 70px;
   }
   &__text {
     margin-bottom: 35px;
