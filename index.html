@@ -104,7 +104,7 @@
     <img class="image-pos-tablet" src="img/1-tablet.jpg" alt="">
     <img class="image-pos-desktop" src="img/1-desktop.jpg" alt="">
     <div class="content">
-        <div class="breakpoint"></div>
+<!--        <div class="breakpoint"></div>-->
         <div class="success">
             <h2 class="success__title">Ваш отзыв отправлен!</h2>
             <div class="success__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам.
@@ -167,24 +167,24 @@
                     Помогите нашим отелям стать лучше! оставьте отзыв о них,<br class="visible-after-mobile"> а также о посещенных вами достопримечательностях
                 </div>
             </div>
-            <div class="grid">
 
+            <div class="grid">
                 <div class="grid__items grid__items--block-indent">
                     <div class="form-ident form-ident--border form-ident--indent">
                         <h3 class="form-ident__title form-ident__title--indent">
                             Представьтесь:
                         </h3>
                         <div class="grid__item form-nik form-nik--indent">
-                            <div class="form-nik__name">Имя*:</div>
-                            <input type="text" class="form-nik__input h5"  placeholder="Пётр">
+                            <label for="nik-name" class="form-nik__name">Имя*:</label>
+                            <input id="nik-name" type="text" class="form-nik__input h5"  placeholder="Пётр">
                         </div>
                         <div class="grid__item form-nik form-nik--indent">
-                            <div class="form-nik__name">Фамилия*:</div>
-                            <input type="text" class="form-nik__input h5"  placeholder="Иванов">
+                            <label for="nik-last-name" class="form-nik__name">Фамилия*:</label>
+                            <input id="nik-last-name" type="text" class="form-nik__input h5"  placeholder="Иванов">
                         </div>
                         <div class="grid__item form-nik form-nik--indent">
-                            <div class="form-nik__name">Отчество:</div>
-                            <input type="text" class="form-nik__input h5"  placeholder="Александрович">
+                            <label for="nik-middle-name" class="form-nik__name">Отчество:</label>
+                            <input id="nik-middle-name" type="text" class="form-nik__input h5"  placeholder="Александрович">
                         </div>
                     </div>
                 </div>
@@ -197,32 +197,32 @@
                         <div class="form-info__obertka">
                             <div class="grid__item">
                                 <div class="form-info__block form-info__block--indent form-info__block--otstup">
-                                    <div class="form-info__name form-info__name--indent">
-                                        <span class="span">Контактный </span>телефон*:
-                                    </div>
-                                    <div class="form-info__content">
-                                        <input class="form-info__input" type="text" placeholder="Введите телефон">
+                                    <label class="form-info__name form-info__name--indent">
+                                        <span class="visible-before-desktop">Контактный </span>телефон**:
+                                    </label>
+                                    <label for="phone" class="form-info__content">
+                                        <input id="phone" class="form-info__input" type="text" placeholder="Введите телефон">
                                         <div class="form-info__icon">
                                             <svg class="svg">
                                                 <use xlink:href="#icon-phone "></use>
                                             </svg>
                                         </div>
-                                    </div>
+                                    </label>
                                 </div>
                             </div>
                             <div class="grid__item">
                                 <div class="form-info__block">
-                                    <div class="form-info__name form-info__name--indent">
+                                    <label class="form-info__name form-info__name--indent">
                                         Электронная почта*:
-                                    </div>
-                                    <div class="form-info__content">
-                                        <input class="form-info__input" type="text" placeholder="Введите e-mail">
+                                    </label>
+                                    <label for="mail" class="form-info__content">
+                                        <input id="mail" class="form-info__input" type="text" placeholder="Введите e-mail">
                                         <div class="form-info__icon">
                                             <svg class="svg">
                                                 <use xlink:href="#icon-mail"></use>
                                             </svg>
                                         </div>
-                                    </div>
+                                    </label>
                                 </div>
                             </div>
                         </div>
@@ -267,61 +267,55 @@
                         </h3>
 
                         <div class="form__cover-desktop">
-                            <div class="form__cover-tablet">
-                                <div class="grid__item">
-                                    <label class="form-select__field sedona-checkbox">
-                                        <input class="sedona-checkbox__input" hidden checked type="checkbox">
-                                        <div class="sedona-checkbox__checked">
-                                            <svg class="svg">
-                                                <use xlink:href="#icon-checked"></use>
-                                            </svg>
-                                        </div>
-                                        <div class="sedona-checkbox__text sedona-checkbox__text--ml25 h5">Мост Дьявола</div>
-                                    </label>
-                                </div>
-                                <div class="grid__item">
-                                    <label class="form-select__field sedona-checkbox">
-                                        <input class="sedona-checkbox__input" hidden checked type="checkbox">
-                                        <div class="sedona-checkbox__checked">
-                                            <svg class="svg">
-                                                <use xlink:href="#icon-checked"></use>
-                                            </svg>
-                                        </div>
-                                        <div class="sedona-checkbox__text sedona-checkbox__text--ml25 h5">Гора-Колокол</div>
-                                    </label>
-                                </div>
+                            <div class="grid__item">
+                                <label class="form-select__field sedona-checkbox">
+                                    <input class="sedona-checkbox__input" hidden checked type="checkbox">
+                                    <div class="sedona-checkbox__checked">
+                                        <svg class="svg">
+                                            <use xlink:href="#icon-checked"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="sedona-checkbox__text h5 sedona-checkbox__text--ml25 sedona-checkbox__text--truncate">Мост Дьявола</div>
+                                </label>
                             </div>
-
-                            <div class="form__cover-tablet">
-                                <div class="grid__item">
-                                    <label class="form-select__field sedona-checkbox">
-                                        <input class="sedona-checkbox__input" hidden checked type="checkbox">
-                                        <div class="sedona-checkbox__checked">
-                                            <svg class="svg">
-                                                <use xlink:href="#icon-checked"></use>
-                                            </svg>
-                                        </div>
-                                        <div class="sedona-checkbox__text sedona-checkbox__text--ml25 h5">Слайд-парк</div>
-                                    </label>
-                                </div>
-                                <div class="grid__item">
-                                    <label class="form-select__field sedona-checkbox form-select__field--temp-mb-0">
-                                        <input class="sedona-checkbox__input" hidden type="checkbox">
-                                        <div class="sedona-checkbox__checked">
-                                            <svg class="svg">
-                                                <use xlink:href="#icon-checked"></use>
-                                            </svg>
-                                        </div>
-                                        <div class="sedona-checkbox__text sedona-checkbox__text--ml25 h5">Красные скалы</div>
-                                    </label>
-                                </div>
+                            <div class="grid__item">
+                                <label class="form-select__field sedona-checkbox">
+                                    <input class="sedona-checkbox__input" hidden checked type="checkbox">
+                                    <div class="sedona-checkbox__checked">
+                                        <svg class="svg">
+                                            <use xlink:href="#icon-checked"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="sedona-checkbox__text h5 sedona-checkbox__text--ml25 sedona-checkbox__text--truncate">Гора-Колокол</div>
+                                </label>
                             </div>
-
+                            <div class="grid__item">
+                                <label class="form-select__field sedona-checkbox">
+                                    <input class="sedona-checkbox__input" hidden checked type="checkbox">
+                                    <div class="sedona-checkbox__checked">
+                                        <svg class="svg">
+                                            <use xlink:href="#icon-checked"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="sedona-checkbox__text h5 sedona-checkbox__text--ml25 sedona-checkbox__text--truncate">Слайд-парк</div>
+                                </label>
+                            </div>
+                            <div class="grid__item">
+                                <label class="form-select__field sedona-checkbox form-select__field--temp-mb-0">
+                                    <input class="sedona-checkbox__input" hidden type="checkbox">
+                                    <div class="sedona-checkbox__checked">
+                                        <svg class="svg">
+                                            <use xlink:href="#icon-checked"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="sedona-checkbox__text h5 sedona-checkbox__text--ml25 sedona-checkbox__text--truncate">Красные скалы</div>
+                                </label>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="grid__items grid__items--block-indent">
+                <div class="grid__items grid__items--block-indent w-100">
                     <div class="form-emotion form-emotion--border">
                         <h3 class="form-emotion__title form-emotion__title--indent">
                             Опишите 3вои эмоции:
@@ -334,8 +328,6 @@
                     </div>
                 </div>
             </div>
-        </div>
-
         <div class="footer">
             <h3 class="footer__text">#visitSEDONA</h3>
             <div class="social-icons social-icons--indent">
@@ -365,7 +357,6 @@
                 </div>
             </div>
         </div>
-    </div>
 
 </body>
 </html>

@@ -23,6 +23,12 @@
   &__text {
     font-weight: bold;
     @extend .text-truncate;
+    &--truncate {
+      width: 125px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
     &--ml25 {
       margin-left: 25px;
     }

@@ -44,6 +44,12 @@ body {
   }
 }
 
+.visible-before-desktop {
+  @media (min-width: $desktop) {
+    display: none;
+  }
+}
+
 .image-pos-mobile {
   position: absolute;
   left: 50%;
@@ -90,4 +96,8 @@ body {
       display: block;
     }
   }
+}
+
+.w-100 {
+  width: 100% !important;
 }

@@ -3,7 +3,7 @@
   background: url(../img/back-mobile.jpg) no-repeat top center/cover;
   position: relative;
   resize: both;
-  overflow: auto;
+  //overflow: auto;
   @media (min-width: $mobile) {
     height: 518px;
   }

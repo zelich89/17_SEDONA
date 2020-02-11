@@ -1,15 +1,12 @@
 .grid {
-  max-width: $content-width;
-  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
+  margin: 0 auto;
   &-wrap {
-    margin: 0 auto;
-    max-width: $content-mobile-wrap;
-    @media (min-width: $mobile) {
-      max-width: $content-tablet-wrap;
-    }
+    padding: 0 20px;
     @media (min-width: $desktop) {
+      padding: 0;
+      margin: 0 auto;
       max-width: $content-desktop-wrap;
     }
   }
@@ -20,7 +17,7 @@
   display: flex;
   flex-wrap: wrap;
   &--block-indent {
-    margin-bottom: 40px;
+    margin-bottom: 50px;
     @media (min-width: $mobile) {
       margin-bottom: 75px;
     }
@@ -59,24 +56,15 @@
   .grid__items:nth-child(3) {
     order: 1;
     width: 50%;
-/*    position: relative;
-    &:after {
-      content: '';
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      background-color: rgba(green,.1);
-      pointer-events: none;
-    }*/
   }
   .grid__items:nth-child(4) {
     width: 100%;
     .grid__item {
-      width: 25%;
+      width: 50%;
+      justify-content: center;
       @media (min-width: $desktop) {
-        width: 50%;
+        width: 25%;
+        justify-content: flex-start;
       }
     }
   }
