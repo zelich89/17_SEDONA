@@ -77,6 +77,9 @@ body {
 .w-100 {
   width: 100% !important; }
 
+.dn {
+  display: none; }
+
 .content {
   background-color: #fff;
   -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
@@ -639,7 +642,7 @@ body {
       cursor: auto; }
 
 .g-map {
-  height: 350px; }
+  height: 430px; }
 
 .social-icons {
   display: -webkit-box;
